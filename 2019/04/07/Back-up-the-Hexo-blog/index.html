@@ -21,18 +21,18 @@
     
     
     <meta name="keywords" content="Hexo,Github">
-    <meta name="description" content="文章主题 : 备份及恢复Hexo博客的详细教程前言 : 如果你利用Hexo搭建了一个静态的网站用于写博客,会发现自己利用Hexo deploy的都是Hexo generate生成的静态网页.而下面的目录并没有被push到远程仓库 ! 需要备份的目录及配置文件   source目录 : 博客文章的.md文件.(需要备份) themes 目录 : 主题文件夹.(需要备份) scaffolds目录 :">
+    <meta name="description" content="文章主题 : 备份及恢复Hexo博客的详细教程 备份原理: master branch: 管理Hexo生成的静态网页.  HexoBackup branch: 管理Hexo 重要的本地源文件及配置文件.  前言 : 如果你利用Hexo搭建了一个静态的网站用于写博客,会发现自己利用Hexo deploy的都是Hexo generate生成的静态网页.而下面的目录并没有被push到远程仓库 ! 需要备">
 <meta name="keywords" content="Hexo,Github">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Back up the Hexo blog">
 <meta property="og:url" content="http://yoursite.com/2019/04/07/Back-up-the-Hexo-blog/index.html">
 <meta property="og:site_name" content="欢迎参观小灰灰的网站哟 ヾ(◍°∇°◍)ﾉﾞ ~">
-<meta property="og:description" content="文章主题 : 备份及恢复Hexo博客的详细教程前言 : 如果你利用Hexo搭建了一个静态的网站用于写博客,会发现自己利用Hexo deploy的都是Hexo generate生成的静态网页.而下面的目录并没有被push到远程仓库 ! 需要备份的目录及配置文件   source目录 : 博客文章的.md文件.(需要备份) themes 目录 : 主题文件夹.(需要备份) scaffolds目录 :">
+<meta property="og:description" content="文章主题 : 备份及恢复Hexo博客的详细教程 备份原理: master branch: 管理Hexo生成的静态网页.  HexoBackup branch: 管理Hexo 重要的本地源文件及配置文件.  前言 : 如果你利用Hexo搭建了一个静态的网站用于写博客,会发现自己利用Hexo deploy的都是Hexo generate生成的静态网页.而下面的目录并没有被push到远程仓库 ! 需要备">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-04-07T03:08:55.218Z">
+<meta property="og:updated_time" content="2019-04-07T03:15:54.093Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Back up the Hexo blog">
-<meta name="twitter:description" content="文章主题 : 备份及恢复Hexo博客的详细教程前言 : 如果你利用Hexo搭建了一个静态的网站用于写博客,会发现自己利用Hexo deploy的都是Hexo generate生成的静态网页.而下面的目录并没有被push到远程仓库 ! 需要备份的目录及配置文件   source目录 : 博客文章的.md文件.(需要备份) themes 目录 : 主题文件夹.(需要备份) scaffolds目录 :">
+<meta name="twitter:description" content="文章主题 : 备份及恢复Hexo博客的详细教程 备份原理: master branch: 管理Hexo生成的静态网页.  HexoBackup branch: 管理Hexo 重要的本地源文件及配置文件.  前言 : 如果你利用Hexo搭建了一个静态的网站用于写博客,会发现自己利用Hexo deploy的都是Hexo generate生成的静态网页.而下面的目录并没有被push到远程仓库 ! 需要备">
     
         <link rel="alternate" type="application/atom+xml" title="欢迎参观小灰灰的网站哟 ヾ(◍°∇°◍)ﾉﾞ ~" href="/atom.xml">
     
@@ -197,7 +197,10 @@
 
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <h2 id="文章主题-备份及恢复Hexo博客的详细教程"><a href="#文章主题-备份及恢复Hexo博客的详细教程" class="headerlink" title="文章主题 : 备份及恢复Hexo博客的详细教程"></a>文章主题 : 备份及恢复<code>Hexo</code>博客的详细教程</h2><h3 id="前言-如果你利用Hexo搭建了一个静态的网站用于写博客-会发现自己利用Hexo-deploy的都是Hexo-generate生成的静态网页-而下面的目录并没有被push到远程仓库"><a href="#前言-如果你利用Hexo搭建了一个静态的网站用于写博客-会发现自己利用Hexo-deploy的都是Hexo-generate生成的静态网页-而下面的目录并没有被push到远程仓库" class="headerlink" title="前言 : 如果你利用Hexo搭建了一个静态的网站用于写博客,会发现自己利用Hexo deploy的都是Hexo generate生成的静态网页.而下面的目录并没有被push到远程仓库 !"></a>前言 : 如果你利用<code>Hexo</code>搭建了一个静态的网站用于写博客,会发现自己利用<code>Hexo deploy</code>的都是<code>Hexo generate</code>生成的静态网页.而下面的目录并没有被<code>push</code>到远程仓库 !</h3><ul>
+            <h2 id="文章主题-备份及恢复Hexo博客的详细教程"><a href="#文章主题-备份及恢复Hexo博客的详细教程" class="headerlink" title="文章主题 : 备份及恢复Hexo博客的详细教程"></a>文章主题 : 备份及恢复<code>Hexo</code>博客的详细教程</h2><ul>
+<li><em>备份原理: <code>master branch</code>: 管理<code>Hexo</code>生成的静态网页.  <code>HexoBackup branch</code>: 管理<code>Hexo 重要的本地源文件及配置文件.</code></em></li>
+</ul>
+<h3 id="前言-如果你利用Hexo搭建了一个静态的网站用于写博客-会发现自己利用Hexo-deploy的都是Hexo-generate生成的静态网页-而下面的目录并没有被push到远程仓库"><a href="#前言-如果你利用Hexo搭建了一个静态的网站用于写博客-会发现自己利用Hexo-deploy的都是Hexo-generate生成的静态网页-而下面的目录并没有被push到远程仓库" class="headerlink" title="前言 : 如果你利用Hexo搭建了一个静态的网站用于写博客,会发现自己利用Hexo deploy的都是Hexo generate生成的静态网页.而下面的目录并没有被push到远程仓库 !"></a>前言 : 如果你利用<code>Hexo</code>搭建了一个静态的网站用于写博客,会发现自己利用<code>Hexo deploy</code>的都是<code>Hexo generate</code>生成的静态网页.而下面的目录并没有被<code>push</code>到远程仓库 !</h3><ul>
 <li><em>需要备份的目录及配置文件</em></li>
 </ul>
 <ol>
@@ -264,7 +267,7 @@
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2019-04-07T03:08:55.218Z" itemprop="dateUpdated">2019-04-07 11:08:55</time>
+    Last updated: <time datetime="2019-04-07T03:15:54.093Z" itemprop="dateUpdated">2019-04-07 11:15:54</time>
 </span><br>
 
 
