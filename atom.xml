@@ -197,11 +197,11 @@
     </summary>
     
     
+      <category term="MyBatis" scheme="http://yoursite.com/tags/MyBatis/"/>
+    
       <category term="Spring" scheme="http://yoursite.com/tags/Spring/"/>
     
       <category term="Spring MVC" scheme="http://yoursite.com/tags/Spring-MVC/"/>
-    
-      <category term="MyBatis" scheme="http://yoursite.com/tags/MyBatis/"/>
     
   </entry>
   
@@ -270,9 +270,9 @@
     </summary>
     
     
-      <category term="Spring" scheme="http://yoursite.com/tags/Spring/"/>
-    
       <category term="MyBatis" scheme="http://yoursite.com/tags/MyBatis/"/>
+    
+      <category term="Spring" scheme="http://yoursite.com/tags/Spring/"/>
     
   </entry>
   
