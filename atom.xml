@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-06-23T01:05:01.356Z</updated>
+  <updated>2019-06-24T14:51:53.363Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hi Spring Boot ~</title>
+    <link href="http://yoursite.com/2019/06/23/Hi-Spring-Boot/"/>
+    <id>http://yoursite.com/2019/06/23/Hi-Spring-Boot/</id>
+    <published>2019-06-23T14:18:06.000Z</published>
+    <updated>2019-06-24T14:51:53.363Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="学习笔记-拥抱Spring-Boot"><a href="#学习笔记-拥抱Spring-Boot" class="headerlink" title="学习笔记 : 拥抱Spring Boot"></a>学习笔记 : 拥抱Spring Boot</h2><p><em>简介 : 随着注解的功能增强,尤其是<code>Servlet 3.0</code>规范的提出,Web容器可以脱离<code>web.xml</code>的部署,使得Web容器完全可以基于注解开发,对于<code>Spring 3.x</code>和<code>Spring 4.x</code>的版本注解功能越来越强大,对于<code>XML</code>的依赖越来越少,到了4.x的版本后甚至可以完全脱离XML,因此在Spring中使用注解开发占据了主流的地位. 于此同时,Pivotal团队在原有Spring基础上主要通过注解的方式继续简化了Spring框架的开发,他们基于Spring框架开发了<code>Spring Boot</code>,所以Spring Boot并非是代替Spring框架,而是让Spring框架更加容易使用哟 ~</em></p><h3 id="Spring-Boot的优点"><a href="#Spring-Boot的优点" class="headerlink" title="Spring Boot的优点"></a>Spring Boot的优点</h3><ul><li><em>创建独立的Spring应用程序</em></li><li><em>嵌入的Tomcat,Jetty或Undertow,无须部署WAR文件</em></li><li><em>允许通过Maven来根据需要获取<code>starter</code></em></li><li><em>尽可能地自动配置Spring</em></li><li><em>提供生产就绪型功能,如指标,健康检查和外部配置</em></li><li><em>绝对没有代码生成,对XML没有要求配置</em></li></ul><h3 id="第一个Spring-Boot程序"><a href="#第一个Spring-Boot程序" class="headerlink" title="第一个Spring Boot程序"></a>第一个Spring Boot程序</h3><ol><li><p><em>DemoApplication.java : Spring boot启动类</em></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.example.demo;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> org.springframework.boot.SpringApplication;</span><br><span class="line"><span class="keyword">import</span> org.springframework.boot.autoconfigure.SpringBootApplication;</span><br><span class="line"></span><br><span class="line"><span class="meta">@SpringBootApplication</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DemoApplication</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        SpringApplication.run(DemoApplication.class, args);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li><li><p><em>MyController.java : Spring mvc控制器</em></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.example.demo.controller;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> org.springframework.web.bind.annotation.GetMapping;</span><br><span class="line"><span class="keyword">import</span> org.springframework.web.bind.annotation.RestController;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@project</span>: first-spring-boot</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@description</span>: 自定义控制器</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span>: 黄宇辉</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@date</span>: 6/23/2019-9:59 PM</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@version</span>: 1.0</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@website</span>: https://yubuntu0109.github.io/</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@RestController</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyController</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@GetMapping</span>(<span class="string">"/hello"</span>)</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">hello</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">"Hi Spring Boot! it's so simple ~"</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li><li><p><em>启动项目的方式有三种,如下所示. 启动成功后在浏览器中输入:<code>http://localhost:8080/hello</code>即可看到如下图的运行结果.</em></p></li><li><em>使用Maven命令运行项目 : <code>mvn spring-boot:run</code></em></li><li><em>直接运行DemoApplication.java中的main方法</em></li><li><em>打包运行 : 将Spring boot打成jar包后使用<code>mvn package</code>运行</em></li></ol><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="/2019/06/23/Hi-Spring-Boot/Hi-Spring-Boot.PNG" alt title>                </div>                <div class="image-caption"></div>            </figure><h3 id="推荐书籍"><a href="#推荐书籍" class="headerlink" title="推荐书籍"></a>推荐书籍</h3><ul><li><em>深入浅出Spring Boot 2.x ——杨开振 · 著</em></li><li><em>Spring Boot+Vue全栈开发实战 ——王松 · 著</em></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;学习笔记-拥抱Spring-Boot&quot;&gt;&lt;a href=&quot;#学习笔记-拥抱Spring-Boot&quot; class=&quot;headerlink&quot; title=&quot;学习笔记 : 拥抱Spring Boot&quot;&gt;&lt;/a&gt;学习笔记 : 拥抱Spring Boot&lt;/h2&gt;&lt;p&gt;&lt;e
+      
+    
+    </summary>
+    
+    
+      <category term="Spring Boot" scheme="http://yoursite.com/tags/Spring-Boot/"/>
+    
+  </entry>
   
   <entry>
     <title>How to support full Unicode in MySQL databases</title>
@@ -253,9 +276,9 @@
     </summary>
     
     
-      <category term="MyBatis" scheme="http://yoursite.com/tags/MyBatis/"/>
-    
       <category term="Spring" scheme="http://yoursite.com/tags/Spring/"/>
+    
+      <category term="MyBatis" scheme="http://yoursite.com/tags/MyBatis/"/>
     
       <category term="Spring MVC" scheme="http://yoursite.com/tags/Spring-MVC/"/>
     
@@ -326,9 +349,9 @@
     </summary>
     
     
-      <category term="MyBatis" scheme="http://yoursite.com/tags/MyBatis/"/>
-    
       <category term="Spring" scheme="http://yoursite.com/tags/Spring/"/>
+    
+      <category term="MyBatis" scheme="http://yoursite.com/tags/MyBatis/"/>
     
   </entry>
   
@@ -490,29 +513,6 @@
     
     
       <category term="Spring" scheme="http://yoursite.com/tags/Spring/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>VOA:One Hour of Exercise a Day Fights Damage of Sitting</title>
-    <link href="http://yoursite.com/2019/05/15/VOA-One-Hour-of-Exercise-a-Day-Fights-Damage-of-Sitting/"/>
-    <id>http://yoursite.com/2019/05/15/VOA-One-Hour-of-Exercise-a-Day-Fights-Damage-of-Sitting/</id>
-    <published>2019-05-15T04:50:00.000Z</published>
-    <updated>2019-05-16T23:23:17.187Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="One-Hour-of-Exercise-a-Day-Fights-Damage-of-Sitting"><a href="#One-Hour-of-Exercise-a-Day-Fights-Damage-of-Sitting" class="headerlink" title="One Hour of Exercise a Day Fights Damage of Sitting"></a>One Hour of Exercise a Day Fights Damage of Sitting</h2><p><em>From VOA Learning English,this is Health&amp;Lifestyle report.</em></p><p><em>When it comes to your health,it seems that sitting too much may be as bad for you as smoking.</em></p><ul><li><em>说到健康,久坐不起可能与抽烟一样对身体不利.</em></li></ul><p><em>If you sit for many hours a day in a traditional office job,you may be interested in a new study. This study suggests that you should get an hour of “<code>brisk</code> exercise” every day.</em></p><ul><li><em>如果你从事传统办公室工作,每日都要坐几个小时,你可能会对一项新研究感兴趣.这项研究建议你每天都花一个小时做轻快运动.</em></li></ul><p><em>Reasearchers says this brisk exercise can help offices workers reduce their risk of an early death. Many offices workers spend a large part of their time seated and physically <code>inactive</code>.</em></p><ul><li><em>研究人员表明,这样的轻快运动能够帮助上班族降低过早死亡的风险.很多上班族大部分时间都是坐着,没有过多行动.</em></li></ul><p><em>A lack of physical activity is linked to some 5.3 million deaths worldwide each year. The researchers say that makes a <code>sedentary</code> lifestyle more deadly than smoking.</em></p><ul><li><em>全球每年530万例死亡都与缺乏体育锻炼有关.研究人员表示,久坐不动的生活方式比吸烟更致命.</em></li></ul><p><em>The new report said that a sedentary lifestyle can cause many diseases,including heart disease,<code>diabetes</code> and even some cancers. These diseases cost the world <code>economy</code> $67.5 billion every year.</em></p><ul><li><em>最新的报道表明,静态的生活方式可能会导致很多疾病,其中包括心脏病,糖尿病,甚至是癌症.每年,全球在这些疾病上等的话费约有675美元.</em></li></ul><p><em>The U.S. Centers for Disease Control and <code>Prevention</code> suggests adults get 150 minutes of <code>moderate</code> <code>aerobic</code> exercise every week. In addition,CDC offcials advise adults to get an additional two hours of muscle <code>strengthening</code> per week.</em></p><ul><li><em>美国疾病预防与控制中心建议成年人每周做150分钟有氧运动.此外,疾病防治中心官员建议成年人每周花两个小时做肌肉训练.</em></li></ul><p><em>Ulf Ekeslund is with the Norwegian School of Sports Sciences and the University of Cambridge. He was the lead writer of the report.</em></p><ul><li><em>Elf Ekeslund同时在挪威体育学院以及剑桥大学任职.他是该报告的首席作者.</em></li></ul><p><em>Ekelund says that “For many people who <code>commute</code> to work and have offices-based jobs,there is no way to escape sitting for <code>prolonged</code> <code>periods</code> of time.”</em></p><ul><li><em>Ekelund表示: “对于乘车上下班到办公室的很多人来说,都无可避免在办公室久坐.”</em></li></ul><p><em>He says he and the other reasearchers “cannot <code>stress</code> enough” the importance of getting exercise. Ekelund suggests going for a run in the morning,riding a bicycle to work,or taking a walk in the middle of the work day.</em></p><ul><li><em>他表示他和其他研究人员一直都在强调锻炼的重要性. Ekelund建议人们晨跑,骑车上班,并在午间散步.</em></li></ul><p><em>An hour of physical activity is “ideal”,he adds. But if this is not possible,he suggests doing at least some exercise each day to reduce the risk of diease and an early death.</em></p><ul><li><em>每天锻炼一小时是理想的,他补充道.但如果不能做到这点,他建议人们每天至少做些运动以降低患病以及过早死亡的风险.</em></li></ul><p><em>For the study,researchers looked at 13 earlier studies on the effect of <code>inactivity</code>. Study subjects were grouped according to the amount of activity they reported. The range of activity reported <code>varied</code> greatly——from less than 5 minutes a day to up 75 minutes a day.</em></p><ul><li><em>此项研究中,研究人员参考了13个不活动带来影响的早期案例.根据他们报告的活动量对研究对象进行了分组.报告说,活动量的幅度差别非常大,从每天至少5分钟到每天75分钟不等.</em></li></ul><p><em>The study found that those who sat for eight hours a day,but got the suggested amount of exercise reduced their chances of dying at an early age.</em></p><ul><li><em>研究发现每天至少坐8小时,但按照建议做了适量运动的人降低了过早死亡的风险.</em></li></ul><p><em>These people did better than those who sat less but were not active.</em></p><ul><li><em>与那些坐的时间少但不做运动的人相比,这些人的情况更好.</em></li></ul><p><em>Ekelund says, “These has been a lot of concern about the health risks” linked “with today’s more sedentary lifestyle.” He says the message from his team is a positive one: it’s possible to reduce,or even eliminate these risks if we are active enough, “even without <code>taking up</code> sports or going to the gym.”</em></p><ul><li><em>Ekelund表示,如今很多健康问题都与静态生活方式有关.他表示他们团队带来的信息是非常积极的: 我们有可能降低甚至消除这些风险,只要我们经常活动,即使不从事体育运动或不去健身房.</em></li></ul><p><em>A report on the study appeared in the pulication <code>Lancet</code>.</em></p><p><em>I’m Anna Matteo.</em></p><h3 id="重点词汇"><a href="#重点词汇" class="headerlink" title="重点词汇"></a>重点词汇</h3><ol><li>brisk            <code>(a)</code>       轻快的.</li><li>inactive         <code>(a)</code>       不活跃的.</li><li>sedentary        <code>(a)</code>       久坐的,静坐的.</li><li>moderate         <code>(a)</code>       稳健的.</li><li>aerobic          <code>(a)</code>       需氧的.</li><li>prolonged        <code>(a)</code>       延长的,拖延的.</li><li>varied           <code>(a)</code>       多变的,各式各样的.</li><li>diabetes         <code>(n)</code>       糖尿病,多尿症.</li><li>economy          <code>(n)</code>       经济.</li><li>prevention      <code>(n)</code>       预防,阻止.</li><li>strengthening   <code>(n)</code>       加强,加固.</li><li>period          <code>(n)</code>       周期,期间.</li><li>inactivity      <code>(n)</code>       不活动,静止.</li><li>lancet          <code>(n)</code>       [外科]柳叶刀.</li><li>commute         <code>(v)</code>       通勤.</li><li>stress          <code>(v)</code>       强调.</li></ol><h3 id="重点短语"><a href="#重点短语" class="headerlink" title="重点短语"></a>重点短语</h3><ol><li><code>taking up</code> : 占用了,占用</li></ol>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;One-Hour-of-Exercise-a-Day-Fights-Damage-of-Sitting&quot;&gt;&lt;a href=&quot;#One-Hour-of-Exercise-a-Day-Fights-Damage-of-Sitting&quot; class=&quot;headerlin
-      
-    
-    </summary>
-    
-    
-      <category term="VOA" scheme="http://yoursite.com/tags/VOA/"/>
     
   </entry>
   
