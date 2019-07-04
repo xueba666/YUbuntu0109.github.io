@@ -35,9 +35,9 @@
     </summary>
     
     
-      <category term="Redis" scheme="http://yoursite.com/tags/Redis/"/>
-    
       <category term="MyBatis" scheme="http://yoursite.com/tags/MyBatis/"/>
+    
+      <category term="Redis" scheme="http://yoursite.com/tags/Redis/"/>
     
       <category term="Spring Boot" scheme="http://yoursite.com/tags/Spring-Boot/"/>
     
