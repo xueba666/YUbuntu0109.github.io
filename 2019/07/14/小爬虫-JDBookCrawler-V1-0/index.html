@@ -20,21 +20,21 @@
     <meta name="theme-color" content="#3F51B5">
     
     
-    <meta name="keywords" content="Java,Jsoup,HttpClient,Crawler">
-    <meta name="description" content="爬虫程序笔记 : JDBookCrawler-V1.0简介 : 最近在学习爬虫技术,浅薄学习HttpClient,Jsoup后,为了总结知识点既而写了这个小爬虫 : 爬取京东商城书籍数据. 程序已Psuh到GitHub : https://github.com/YUbuntu0109/Crawler-learning/tree/master/BookCrawler-v1.0/bookcrawler">
-<meta name="keywords" content="Java,Jsoup,HttpClient,Crawler">
+    <meta name="keywords" content="Java,MySQL,Jsoup,HttpClient,Crawler">
+    <meta name="description" content="爬虫项目笔记 : JDBookCrawler-V1.0简介 : 最近在学习爬虫技术,浅薄学习HttpClient,Jsoup后,为了总结知识点既而写了这个小爬虫 : 爬取京东商城书籍数据. 程序已Psuh到GitHub : https://github.com/YUbuntu0109/Crawler-learning/tree/master/BookCrawler-v1.0/bookcrawler">
+<meta name="keywords" content="Java,MySQL,Jsoup,HttpClient,Crawler">
 <meta property="og:type" content="article">
 <meta property="og:title" content="小爬虫:JDBookCrawler-V1.0">
 <meta property="og:url" content="http://yoursite.com/2019/07/14/小爬虫-JDBookCrawler-V1-0/index.html">
 <meta property="og:site_name" content="欢迎参观小灰灰的网站哟 ヾ(◍°∇°◍)ﾉﾞ ~">
-<meta property="og:description" content="爬虫程序笔记 : JDBookCrawler-V1.0简介 : 最近在学习爬虫技术,浅薄学习HttpClient,Jsoup后,为了总结知识点既而写了这个小爬虫 : 爬取京东商城书籍数据. 程序已Psuh到GitHub : https://github.com/YUbuntu0109/Crawler-learning/tree/master/BookCrawler-v1.0/bookcrawler">
+<meta property="og:description" content="爬虫项目笔记 : JDBookCrawler-V1.0简介 : 最近在学习爬虫技术,浅薄学习HttpClient,Jsoup后,为了总结知识点既而写了这个小爬虫 : 爬取京东商城书籍数据. 程序已Psuh到GitHub : https://github.com/YUbuntu0109/Crawler-learning/tree/master/BookCrawler-v1.0/bookcrawler">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://yoursite.com/2019/07/14/小爬虫-JDBookCrawler-V1-0/BookCrawler-V1.0-BookImage.PNG">
 <meta property="og:image" content="http://yoursite.com/2019/07/14/小爬虫-JDBookCrawler-V1-0/BookCrawler-V1.0-DB.PNG">
-<meta property="og:updated_time" content="2019-07-14T06:53:55.369Z">
+<meta property="og:updated_time" content="2019-07-15T10:19:33.472Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="小爬虫:JDBookCrawler-V1.0">
-<meta name="twitter:description" content="爬虫程序笔记 : JDBookCrawler-V1.0简介 : 最近在学习爬虫技术,浅薄学习HttpClient,Jsoup后,为了总结知识点既而写了这个小爬虫 : 爬取京东商城书籍数据. 程序已Psuh到GitHub : https://github.com/YUbuntu0109/Crawler-learning/tree/master/BookCrawler-v1.0/bookcrawler">
+<meta name="twitter:description" content="爬虫项目笔记 : JDBookCrawler-V1.0简介 : 最近在学习爬虫技术,浅薄学习HttpClient,Jsoup后,为了总结知识点既而写了这个小爬虫 : 爬取京东商城书籍数据. 程序已Psuh到GitHub : https://github.com/YUbuntu0109/Crawler-learning/tree/master/BookCrawler-v1.0/bookcrawler">
 <meta name="twitter:image" content="http://yoursite.com/2019/07/14/小爬虫-JDBookCrawler-V1-0/BookCrawler-V1.0-BookImage.PNG">
     
         <link rel="alternate" type="application/atom+xml" title="欢迎参观小灰灰的网站哟 ヾ(◍°∇°◍)ﾉﾞ ~" href="/atom.xml">
@@ -181,7 +181,7 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
             <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#爬虫程序笔记-JDBookCrawler-V1-0"><span class="post-toc-number">1.</span> <span class="post-toc-text">爬虫程序笔记 : JDBookCrawler-V1.0</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#项目概述"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">项目概述</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#项目结构图"><span class="post-toc-number">1.1.1.</span> <span class="post-toc-text">项目结构图</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#程序运行指南"><span class="post-toc-number">1.1.2.</span> <span class="post-toc-text">程序运行指南</span></a></li></ol></li></ol></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#爬虫项目笔记-JDBookCrawler-V1-0"><span class="post-toc-number">1.</span> <span class="post-toc-text">爬虫项目笔记 : JDBookCrawler-V1.0</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#项目概述"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">项目概述</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#项目结构图"><span class="post-toc-number">1.1.1.</span> <span class="post-toc-text">项目结构图</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#程序运行指南"><span class="post-toc-number">1.1.2.</span> <span class="post-toc-text">程序运行指南</span></a></li></ol></li></ol></li></ol>
         </nav>
     </aside>
 
@@ -200,7 +200,7 @@
 
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <h2 id="爬虫程序笔记-JDBookCrawler-V1-0"><a href="#爬虫程序笔记-JDBookCrawler-V1-0" class="headerlink" title="爬虫程序笔记 : JDBookCrawler-V1.0"></a>爬虫程序笔记 : JDBookCrawler-V1.0</h2><p><em>简介 : 最近在学习爬虫技术,浅薄学习<code>HttpClient</code>,<code>Jsoup</code>后,为了总结知识点既而写了这个小爬虫 : 爬取京东商城书籍数据. 程序已Psuh到GitHub : <a href="https://github.com/YUbuntu0109/Crawler-learning/tree/master/BookCrawler-v1.0/bookcrawler" target="_blank" rel="noopener">https://github.com/YUbuntu0109/Crawler-learning/tree/master/BookCrawler-v1.0/bookcrawler</a></em></p>
+            <h2 id="爬虫项目笔记-JDBookCrawler-V1-0"><a href="#爬虫项目笔记-JDBookCrawler-V1-0" class="headerlink" title="爬虫项目笔记 : JDBookCrawler-V1.0"></a>爬虫项目笔记 : JDBookCrawler-V1.0</h2><p><em>简介 : 最近在学习爬虫技术,浅薄学习<code>HttpClient</code>,<code>Jsoup</code>后,为了总结知识点既而写了这个小爬虫 : 爬取京东商城书籍数据. 程序已Psuh到GitHub : <a href="https://github.com/YUbuntu0109/Crawler-learning/tree/master/BookCrawler-v1.0/bookcrawler" target="_blank" rel="noopener">https://github.com/YUbuntu0109/Crawler-learning/tree/master/BookCrawler-v1.0/bookcrawler</a></em></p>
 <h3 id="项目概述"><a href="#项目概述" class="headerlink" title="项目概述"></a>项目概述</h3><h4 id="项目结构图"><a href="#项目结构图" class="headerlink" title="项目结构图"></a>项目结构图</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">└─BookCrawler-v1.0</span><br><span class="line">        └─bookcrawler</span><br><span class="line">            │ </span><br><span class="line">            │  crawler.sql</span><br><span class="line">            │  pom.xml</span><br><span class="line">            │</span><br><span class="line">            └─src</span><br><span class="line">                └─main</span><br><span class="line">                    ├─java</span><br><span class="line">                    │  └─pers</span><br><span class="line">                    │      └─huangyuhui</span><br><span class="line">                    │          └─bookcrawler</span><br><span class="line">                    │              │  BookCrawlerTest.java</span><br><span class="line">                    │              │</span><br><span class="line">                    │              ├─dao</span><br><span class="line">                    │              │      BookDao.java</span><br><span class="line">                    │              │</span><br><span class="line">                    │              ├─pojo</span><br><span class="line">                    │              │      Book.java</span><br><span class="line">                    │              │      HttpHeader.java</span><br><span class="line">                    │              │</span><br><span class="line">                    │              ├─task</span><br><span class="line">                    │              │      BookCrawler.java</span><br><span class="line">                    │              │</span><br><span class="line">                    │              └─util</span><br><span class="line">                    │                      ConfigManager.java</span><br><span class="line">                    │                      DBUtils.java</span><br><span class="line">                    │                      HttpUtils.java</span><br><span class="line">                    │</span><br><span class="line">                    └─resources</span><br><span class="line">                            db.properties</span><br></pre></td></tr></table></figure>
 <h4 id="程序运行指南"><a href="#程序运行指南" class="headerlink" title="程序运行指南"></a>程序运行指南</h4><ol>
 <li><p><em>crawler.sql : MySQL数据库文件</em></p>
@@ -239,7 +239,7 @@
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2019-07-14T06:53:55.369Z" itemprop="dateUpdated">2019-07-14 14:53:55</time>
+    Last updated: <time datetime="2019-07-15T10:19:33.472Z" itemprop="dateUpdated">2019-07-15 18:19:33</time>
 </span><br>
 
 
@@ -263,7 +263,7 @@
 
         <div class="post-footer">
             
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Crawler/">Crawler</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HttpClient/">HttpClient</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/">Java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Jsoup/">Jsoup</a></li></ul>
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Crawler/">Crawler</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HttpClient/">HttpClient</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/">Java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Jsoup/">Jsoup</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MySQL/">MySQL</a></li></ul>
 
 
             
@@ -318,7 +318,14 @@
     </div>
 
     
-<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2019/07/15/小爬虫-JDBookCrawler-V2-0/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">小爬虫:JDBookCrawler-V2.0</h4>
+      </a>
+    </div>
   
 
   
