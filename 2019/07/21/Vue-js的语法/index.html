@@ -30,7 +30,7 @@
 <meta property="og:description" content="学习笔记 : Vue.js的语法数值绑定文本插值文本插值的方式十分简单,只需使用双括号(Mustache语法)将要绑定的变量,值,表达式括住即可,Vue将会获取计算后的值,并以文本的形式将其展示出来 .123456789&amp;lt;div id=&quot;app&quot;&amp;gt;&amp;#123;&amp;#123; message &amp;#125;&amp;#125;&amp;lt;/div&amp;gt;&amp;lt;script&amp;gt;	var app =">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://yoursite.com/2019/07/21/Vue-js的语法/Vue-for-withoutKey.png">
-<meta property="og:updated_time" content="2019-07-22T04:27:17.712Z">
+<meta property="og:updated_time" content="2019-07-23T13:46:58.519Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Vue.js的语法">
 <meta name="twitter:description" content="学习笔记 : Vue.js的语法数值绑定文本插值文本插值的方式十分简单,只需使用双括号(Mustache语法)将要绑定的变量,值,表达式括住即可,Vue将会获取计算后的值,并以文本的形式将其展示出来 .123456789&amp;lt;div id=&quot;app&quot;&amp;gt;&amp;#123;&amp;#123; message &amp;#125;&amp;#125;&amp;lt;/div&amp;gt;&amp;lt;script&amp;gt;	var app =">
@@ -212,7 +212,55 @@
 </li>
 </ol>
 <h3 id="事件绑定"><a href="#事件绑定" class="headerlink" title="事件绑定"></a>事件绑定</h3><h4 id="指令v-on"><a href="#指令v-on" class="headerlink" title="指令v-on"></a>指令v-on</h4><p><em>Vue使用<code>v-on</code>指令监听DOM事件,开发者可以将事件代码通过v-on指令绑定到DOM节点上,其简写为 <code>@</code></em><br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">value</span>=<span class="string">"简写:鼠标点击事件"</span> @<span class="attr">click</span>=<span class="string">"show"</span> /&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">value</span>=<span class="string">"鼠标点击事件"</span> <span class="attr">id</span>=<span class="string">"btn"</span> <span class="attr">v-on:click</span>=<span class="string">"show"</span> /&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">value</span>=<span class="string">"鼠标覆盖事件"</span> <span class="attr">id</span>=<span class="string">"btn"</span> <span class="attr">v-on:mouseover</span>=<span class="string">"show"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">	var v = new Vue(&#123;</span></span><br><span class="line"><span class="undefined">		el: '#app',</span></span><br><span class="line"><span class="undefined">		data: &#123;</span></span><br><span class="line"><span class="undefined">			message: 'v-on',</span></span><br><span class="line"><span class="undefined">		&#125;,</span></span><br><span class="line"><span class="undefined">	    methods: &#123;</span></span><br><span class="line"><span class="undefined">			show: function() &#123;</span></span><br><span class="line"><span class="undefined">				alert('Hi Vue!')</span></span><br><span class="line"><span class="undefined">			&#125;</span></span><br><span class="line"><span class="undefined">		&#125;</span></span><br><span class="line"><span class="undefined">	&#125;);</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
-<h4 id="常见修饰符"><a href="#常见修饰符" class="headerlink" title="常见修饰符"></a>常见修饰符</h4><p><em>常用的事件修饰符如下所示 :</em><br>|   名称   | 可用版本  | 可用事件 |                     说明                      |<br>| :——: | :——-: | :——: | :——————————————-: |<br>|  .stop   |   所有    |   任意   |           当事件触发时,阻止事件冒泡           |<br>| .prevent |   所有    |   任意   |        当事件触发时,阻止元素的默认行为        |<br>| .capture |   所有    |   任意   |           当事件触发时,限制事件捕获           |<br>|  .self   |   所有    |   任意   |           限制事件仅作用于节点自身            |<br>|  .once   | 2.1.4以上 |   任意   |          事件被触发一次后既解除监听           |<br>| .passive | 2.1.4以上 |   滚动   | 移动端,限制事件永不调用<code>preventDefault()</code>方法 |</p>
+<h4 id="常见修饰符"><a href="#常见修饰符" class="headerlink" title="常见修饰符"></a>常见修饰符</h4><p><em>常用的事件修饰符如下所示 :</em></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">名称</th>
+<th style="text-align:center">可用版本</th>
+<th style="text-align:center">可用事件</th>
+<th style="text-align:center">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">.stop</td>
+<td style="text-align:center">所有</td>
+<td style="text-align:center">任意</td>
+<td style="text-align:center">当事件触发时,阻止事件冒泡</td>
+</tr>
+<tr>
+<td style="text-align:center">.prevent</td>
+<td style="text-align:center">所有</td>
+<td style="text-align:center">任意</td>
+<td style="text-align:center">当事件触发时,阻止元素的默认行为</td>
+</tr>
+<tr>
+<td style="text-align:center">.capture</td>
+<td style="text-align:center">所有</td>
+<td style="text-align:center">任意</td>
+<td style="text-align:center">当事件触发时,限制事件捕获</td>
+</tr>
+<tr>
+<td style="text-align:center">.self</td>
+<td style="text-align:center">所有</td>
+<td style="text-align:center">任意</td>
+<td style="text-align:center">限制事件仅作用于节点自身</td>
+</tr>
+<tr>
+<td style="text-align:center">.once</td>
+<td style="text-align:center">2.1.4以上</td>
+<td style="text-align:center">任意</td>
+<td style="text-align:center">事件被触发一次后既解除监听</td>
+</tr>
+<tr>
+<td style="text-align:center">.passive</td>
+<td style="text-align:center">2.1.4以上</td>
+<td style="text-align:center">滚动</td>
+<td style="text-align:center">移动端,限制事件永不调用<code>preventDefault()</code>方法</td>
+</tr>
+</tbody>
+</table>
 <ol>
 <li><p><em><code>.stop</code>事件修饰符示例程序如下 :</em></p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"../resources/vue.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">title</span>&gt;</span>.stop<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">			#app&#123;</span></span><br><span class="line"><span class="undefined">				height: 60px;</span></span><br><span class="line"><span class="undefined">				width: 60px;</span></span><br><span class="line"><span class="undefined">				background-color: lightgray;</span></span><br><span class="line"><span class="undefined">			&#125;</span></span><br><span class="line"><span class="undefined">		</span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span> @<span class="attr">click</span>=<span class="string">"divHandler"</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">value</span>=<span class="string">"Click"</span> @<span class="attr">click.stop</span>=<span class="string">"btnHandler"</span> /&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">			var vm = new Vue(&#123;</span></span><br><span class="line"><span class="undefined">				el: '#app',</span></span><br><span class="line"><span class="undefined">				methods: &#123;</span></span><br><span class="line"><span class="undefined">					divHandler: function() &#123;</span></span><br><span class="line"><span class="undefined">						console.log("触发'divHandler事件 !'")</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined">					&#125;,</span></span><br><span class="line"><span class="undefined">					btnHandler: function() &#123;</span></span><br><span class="line"><span class="undefined">						console.log("触发了'btnHandler事件 !'")</span></span><br><span class="line"><span class="undefined">					&#125;</span></span><br><span class="line"><span class="undefined">				&#125;</span></span><br><span class="line"><span class="undefined">			&#125;);</span></span><br><span class="line"><span class="undefined">		</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
@@ -299,7 +347,7 @@
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2019-07-22T04:27:17.712Z" itemprop="dateUpdated">2019-07-22 12:27:17</time>
+    Last updated: <time datetime="2019-07-23T13:46:58.519Z" itemprop="dateUpdated">2019-07-23 21:46:58</time>
 </span><br>
 
 
