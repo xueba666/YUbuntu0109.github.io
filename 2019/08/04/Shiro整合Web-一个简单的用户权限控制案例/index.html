@@ -21,13 +21,13 @@
     
     
     <meta name="keywords" content="Java web,Shiro">
-    <meta name="description" content="学习笔记 : Shiro整合Web : 一个简单的用户权限控制案例总结前面Shiro的基本学习笔记,继而尝试整合web,来写一个简单的用户权限控制案例( Java web ),用户权限划分如下 :  管理员(admin) : 具有操控部门/员工信息管理页的所有权限 用户(yuhui) : 仅具有部门信息的view权限  环境配置 baseWebShiro\pom.xml : Maven依赖 123">
+    <meta name="description" content="学习笔记 : Shiro整合Web : 一个简单的用户权限控制案例总结前面Shiro的基本学习笔记,继而尝试整合web,来写一个简单的用户权限控制案例( Java web ),用户权限划分如下,该案例的代码仓库 : https://github.com/YUbuntu0109/Shiro-learning/tree/master/basic%20web%20project%20with%20shi">
 <meta name="keywords" content="Java web,Shiro">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Shiro整合Web:一个简单的用户权限控制案例">
 <meta property="og:url" content="http://yoursite.com/2019/08/04/Shiro整合Web-一个简单的用户权限控制案例/index.html">
 <meta property="og:site_name" content="欢迎参观小灰灰的网站哟 ヾ(◍°∇°◍)ﾉﾞ ~">
-<meta property="og:description" content="学习笔记 : Shiro整合Web : 一个简单的用户权限控制案例总结前面Shiro的基本学习笔记,继而尝试整合web,来写一个简单的用户权限控制案例( Java web ),用户权限划分如下 :  管理员(admin) : 具有操控部门/员工信息管理页的所有权限 用户(yuhui) : 仅具有部门信息的view权限  环境配置 baseWebShiro\pom.xml : Maven依赖 123">
+<meta property="og:description" content="学习笔记 : Shiro整合Web : 一个简单的用户权限控制案例总结前面Shiro的基本学习笔记,继而尝试整合web,来写一个简单的用户权限控制案例( Java web ),用户权限划分如下,该案例的代码仓库 : https://github.com/YUbuntu0109/Shiro-learning/tree/master/basic%20web%20project%20with%20shi">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://yoursite.com/2019/08/04/Shiro整合Web-一个简单的用户权限控制案例/Shiro整合web-用户登录页.PNG">
 <meta property="og:image" content="http://yoursite.com/2019/08/04/Shiro整合Web-一个简单的用户权限控制案例/Shiro整合web-用户主页.PNG">
@@ -35,10 +35,10 @@
 <meta property="og:image" content="http://yoursite.com/2019/08/04/Shiro整合Web-一个简单的用户权限控制案例/Shiro整合web-admin-员工信息管理页.PNG">
 <meta property="og:image" content="http://yoursite.com/2019/08/04/Shiro整合Web-一个简单的用户权限控制案例/Shiro整合web-yuhui-部门信息管理页.PNG">
 <meta property="og:image" content="http://yoursite.com/2019/08/04/Shiro整合Web-一个简单的用户权限控制案例/Shiro整合web-yuhui-员工信息管理页.PNG">
-<meta property="og:updated_time" content="2019-08-04T06:52:11.202Z">
+<meta property="og:updated_time" content="2019-08-10T11:52:53.437Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Shiro整合Web:一个简单的用户权限控制案例">
-<meta name="twitter:description" content="学习笔记 : Shiro整合Web : 一个简单的用户权限控制案例总结前面Shiro的基本学习笔记,继而尝试整合web,来写一个简单的用户权限控制案例( Java web ),用户权限划分如下 :  管理员(admin) : 具有操控部门/员工信息管理页的所有权限 用户(yuhui) : 仅具有部门信息的view权限  环境配置 baseWebShiro\pom.xml : Maven依赖 123">
+<meta name="twitter:description" content="学习笔记 : Shiro整合Web : 一个简单的用户权限控制案例总结前面Shiro的基本学习笔记,继而尝试整合web,来写一个简单的用户权限控制案例( Java web ),用户权限划分如下,该案例的代码仓库 : https://github.com/YUbuntu0109/Shiro-learning/tree/master/basic%20web%20project%20with%20shi">
 <meta name="twitter:image" content="http://yoursite.com/2019/08/04/Shiro整合Web-一个简单的用户权限控制案例/Shiro整合web-用户登录页.PNG">
     
         <link rel="alternate" type="application/atom+xml" title="欢迎参观小灰灰的网站哟 ヾ(◍°∇°◍)ﾉﾞ ~" href="/atom.xml">
@@ -204,7 +204,7 @@
 
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <h2 id="学习笔记-Shiro整合Web-一个简单的用户权限控制案例"><a href="#学习笔记-Shiro整合Web-一个简单的用户权限控制案例" class="headerlink" title="学习笔记 : Shiro整合Web : 一个简单的用户权限控制案例"></a>学习笔记 : Shiro整合Web : 一个简单的用户权限控制案例</h2><p><em>总结前面<code>Shiro</code>的基本学习笔记,继而尝试整合web,来写一个简单的用户权限控制案例( Java web ),用户权限划分如下 :</em></p>
+            <h2 id="学习笔记-Shiro整合Web-一个简单的用户权限控制案例"><a href="#学习笔记-Shiro整合Web-一个简单的用户权限控制案例" class="headerlink" title="学习笔记 : Shiro整合Web : 一个简单的用户权限控制案例"></a>学习笔记 : Shiro整合Web : 一个简单的用户权限控制案例</h2><p><em>总结前面<code>Shiro</code>的基本学习笔记,继而尝试整合web,来写一个简单的用户权限控制案例( Java web ),用户权限划分如下,该案例的代码仓库 : <a href="https://github.com/YUbuntu0109/Shiro-learning/tree/master/basic%20web%20project%20with%20shiro" target="_blank" rel="noopener">https://github.com/YUbuntu0109/Shiro-learning/tree/master/basic%20web%20project%20with%20shiro</a></em></p>
 <ul>
 <li>管理员(admin) : 具有操控部门/员工信息管理页的所有权限</li>
 <li>用户(yuhui) : 仅具有部门信息的<code>view</code>权限</li>
@@ -313,7 +313,7 @@
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2019-08-04T06:52:11.202Z" itemprop="dateUpdated">2019-08-04 14:52:11</time>
+    Last updated: <time datetime="2019-08-10T11:52:53.437Z" itemprop="dateUpdated">2019-08-10 19:52:53</time>
 </span><br>
 
 
