@@ -14,35 +14,35 @@
     
     
     
-    <title>一个简单的SpringBoot整合Shiro的权限管理案例 | 欢迎参观小灰灰的网站哟 ヾ(◍°∇°◍)ﾉﾞ ~ | My Personal blog website —— be founded on March 9, 2019</title>
+    <title>一个基础的SpringBoot整合Shiro案例 | 欢迎参观小灰灰的网站哟 ヾ(◍°∇°◍)ﾉﾞ ~ | My Personal blog website —— be founded on March 9, 2019</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="theme-color" content="#3F51B5">
     
     
     <meta name="keywords" content="Shiro,Thymeleaf,SpringBoot,EhCache">
-    <meta name="description" content="学习笔记 : 一个简单的SpringBoot整合Shiro的权限管理案例前些日子写了一个整合Shiro的基本Web案例,然后又进阶地学习了SpringBoot整合Shiro的基本知识,继而今天总结一下 : 写一个基本的SpringBoot整合Shiro并集成EhCache的用户权限管理案例~ 该案例的代码仓库 : https://github.com/YUbuntu0109/Shiro-learn">
+    <meta name="description" content="学习笔记 : 一个基础的SpringBoot整合Shiro案例前些日子写了一个整合Shiro的基本Web案例,然后又进阶地学习了SpringBoot整合Shiro的基本知识,继而今天总结一下 : 写一个基础的SpringBoot整合Shiro案例~ 该案例的代码仓库 : https://github.com/YUbuntu0109/Shiro-learning/tree/master/spring">
 <meta name="keywords" content="Shiro,Thymeleaf,SpringBoot,EhCache">
 <meta property="og:type" content="article">
-<meta property="og:title" content="一个简单的SpringBoot整合Shiro的权限管理案例">
-<meta property="og:url" content="http://yoursite.com/2019/08/07/一个简单的SpringBoot整合Shiro的权限管理案例/index.html">
+<meta property="og:title" content="一个基础的SpringBoot整合Shiro案例">
+<meta property="og:url" content="http://yoursite.com/2019/08/07/一个基础的SpringBoot整合Shiro案例/index.html">
 <meta property="og:site_name" content="欢迎参观小灰灰的网站哟 ヾ(◍°∇°◍)ﾉﾞ ~">
-<meta property="og:description" content="学习笔记 : 一个简单的SpringBoot整合Shiro的权限管理案例前些日子写了一个整合Shiro的基本Web案例,然后又进阶地学习了SpringBoot整合Shiro的基本知识,继而今天总结一下 : 写一个基本的SpringBoot整合Shiro并集成EhCache的用户权限管理案例~ 该案例的代码仓库 : https://github.com/YUbuntu0109/Shiro-learn">
+<meta property="og:description" content="学习笔记 : 一个基础的SpringBoot整合Shiro案例前些日子写了一个整合Shiro的基本Web案例,然后又进阶地学习了SpringBoot整合Shiro的基本知识,继而今天总结一下 : 写一个基础的SpringBoot整合Shiro案例~ 该案例的代码仓库 : https://github.com/YUbuntu0109/Shiro-learning/tree/master/spring">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="http://yoursite.com/2019/08/07/一个简单的SpringBoot整合Shiro的权限管理案例/shiro-learning-database-er.png">
-<meta property="og:image" content="http://yoursite.com/2019/08/07/一个简单的SpringBoot整合Shiro的权限管理案例/springboot-shiro-用户登录页.PNG">
-<meta property="og:image" content="http://yoursite.com/2019/08/07/一个简单的SpringBoot整合Shiro的权限管理案例/springboot-shiro-用户主页.PNG">
-<meta property="og:image" content="http://yoursite.com/2019/08/07/一个简单的SpringBoot整合Shiro的权限管理案例/springboot-shiro-[admin]-学生信息管理页.PNG">
-<meta property="og:image" content="http://yoursite.com/2019/08/07/一个简单的SpringBoot整合Shiro的权限管理案例/springboot-shiro-[admin]-教师信息管理页.PNG">
-<meta property="og:image" content="http://yoursite.com/2019/08/07/一个简单的SpringBoot整合Shiro的权限管理案例/springboot-shiro-[tea]-学生信息管理页.PNG">
-<meta property="og:image" content="http://yoursite.com/2019/08/07/一个简单的SpringBoot整合Shiro的权限管理案例/springboot-shiro-[tea]-教师信息管理页.PNG">
-<meta property="og:image" content="http://yoursite.com/2019/08/07/一个简单的SpringBoot整合Shiro的权限管理案例/springboot-shiro-[stu]-学生信息管理页.PNG">
-<meta property="og:image" content="http://yoursite.com/2019/08/07/一个简单的SpringBoot整合Shiro的权限管理案例/springboot-shiro-[stu]-教师信息管理页.PNG">
-<meta property="og:updated_time" content="2019-08-11T03:59:41.399Z">
+<meta property="og:image" content="http://yoursite.com/2019/08/07/一个基础的SpringBoot整合Shiro案例/shiro-learning-database-er.png">
+<meta property="og:image" content="http://yoursite.com/2019/08/07/一个基础的SpringBoot整合Shiro案例/springboot-shiro-用户登录页.PNG">
+<meta property="og:image" content="http://yoursite.com/2019/08/07/一个基础的SpringBoot整合Shiro案例/springboot-shiro-用户主页.PNG">
+<meta property="og:image" content="http://yoursite.com/2019/08/07/一个基础的SpringBoot整合Shiro案例/springboot-shiro-[admin]-学生信息管理页.PNG">
+<meta property="og:image" content="http://yoursite.com/2019/08/07/一个基础的SpringBoot整合Shiro案例/springboot-shiro-[admin]-教师信息管理页.PNG">
+<meta property="og:image" content="http://yoursite.com/2019/08/07/一个基础的SpringBoot整合Shiro案例/springboot-shiro-[tea]-学生信息管理页.PNG">
+<meta property="og:image" content="http://yoursite.com/2019/08/07/一个基础的SpringBoot整合Shiro案例/springboot-shiro-[tea]-教师信息管理页.PNG">
+<meta property="og:image" content="http://yoursite.com/2019/08/07/一个基础的SpringBoot整合Shiro案例/springboot-shiro-[stu]-学生信息管理页.PNG">
+<meta property="og:image" content="http://yoursite.com/2019/08/07/一个基础的SpringBoot整合Shiro案例/springboot-shiro-[stu]-教师信息管理页.PNG">
+<meta property="og:updated_time" content="2019-08-12T01:13:12.139Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="一个简单的SpringBoot整合Shiro的权限管理案例">
-<meta name="twitter:description" content="学习笔记 : 一个简单的SpringBoot整合Shiro的权限管理案例前些日子写了一个整合Shiro的基本Web案例,然后又进阶地学习了SpringBoot整合Shiro的基本知识,继而今天总结一下 : 写一个基本的SpringBoot整合Shiro并集成EhCache的用户权限管理案例~ 该案例的代码仓库 : https://github.com/YUbuntu0109/Shiro-learn">
-<meta name="twitter:image" content="http://yoursite.com/2019/08/07/一个简单的SpringBoot整合Shiro的权限管理案例/shiro-learning-database-er.png">
+<meta name="twitter:title" content="一个基础的SpringBoot整合Shiro案例">
+<meta name="twitter:description" content="学习笔记 : 一个基础的SpringBoot整合Shiro案例前些日子写了一个整合Shiro的基本Web案例,然后又进阶地学习了SpringBoot整合Shiro的基本知识,继而今天总结一下 : 写一个基础的SpringBoot整合Shiro案例~ 该案例的代码仓库 : https://github.com/YUbuntu0109/Shiro-learning/tree/master/spring">
+<meta name="twitter:image" content="http://yoursite.com/2019/08/07/一个基础的SpringBoot整合Shiro案例/shiro-learning-database-er.png">
     
         <link rel="alternate" type="application/atom+xml" title="欢迎参观小灰灰的网站哟 ヾ(◍°∇°◍)ﾉﾞ ~" href="/atom.xml">
     
@@ -137,7 +137,7 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">一个简单的SpringBoot整合Shiro的权限管理案例</div>
+        <div class="flex-col header-title ellipsis">一个基础的SpringBoot整合Shiro案例</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -165,7 +165,7 @@
 <header class="content-header post-header">
 
     <div class="container fade-scale">
-        <h1 class="title">一个简单的SpringBoot整合Shiro的权限管理案例</h1>
+        <h1 class="title">一个基础的SpringBoot整合Shiro案例</h1>
         <h5 class="subtitle">
             
                 <time datetime="2019-08-07T04:14:55.000Z" itemprop="datePublished" class="page-time">
@@ -188,15 +188,15 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
             <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#学习笔记-一个简单的SpringBoot整合Shiro的权限管理案例"><span class="post-toc-number">1.</span> <span class="post-toc-text">学习笔记 : 一个简单的SpringBoot整合Shiro的权限管理案例</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#数据库设计"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">数据库设计</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#资源权限设计"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">资源权限设计</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#凭证加密设计"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">凭证加密设计</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Thymeleaf整合Shiro标签"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">Thymeleaf整合Shiro标签</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Shiro集成EhCache缓存"><span class="post-toc-number">1.5.</span> <span class="post-toc-text">Shiro集成EhCache缓存</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#案例截屏解析"><span class="post-toc-number">1.6.</span> <span class="post-toc-text">案例截屏解析</span></a></li></ol></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#学习笔记-一个基础的SpringBoot整合Shiro案例"><span class="post-toc-number">1.</span> <span class="post-toc-text">学习笔记 : 一个基础的SpringBoot整合Shiro案例</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#数据库设计"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">数据库设计</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#资源权限设计"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">资源权限设计</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#凭证加密设计"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">凭证加密设计</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Thymeleaf整合Shiro标签"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">Thymeleaf整合Shiro标签</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Shiro集成EhCache缓存"><span class="post-toc-number">1.5.</span> <span class="post-toc-text">Shiro集成EhCache缓存</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#案例截屏解析"><span class="post-toc-number">1.6.</span> <span class="post-toc-text">案例截屏解析</span></a></li></ol></li></ol>
         </nav>
     </aside>
 
 
-<article id="post-一个简单的SpringBoot整合Shiro的权限管理案例" class="post-article article-type-post fade" itemprop="blogPost">
+<article id="post-一个基础的SpringBoot整合Shiro案例" class="post-article article-type-post fade" itemprop="blogPost">
 
     <div class="post-card">
-        <h1 class="post-card-title">一个简单的SpringBoot整合Shiro的权限管理案例</h1>
+        <h1 class="post-card-title">一个基础的SpringBoot整合Shiro案例</h1>
         <div class="post-meta">
             <time class="post-time" title="2019-08-07 12:14:55" datetime="2019-08-07T04:14:55.000Z" itemprop="datePublished">2019-08-07</time>
 
@@ -207,11 +207,11 @@
 
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <h2 id="学习笔记-一个简单的SpringBoot整合Shiro的权限管理案例"><a href="#学习笔记-一个简单的SpringBoot整合Shiro的权限管理案例" class="headerlink" title="学习笔记 : 一个简单的SpringBoot整合Shiro的权限管理案例"></a>学习笔记 : 一个简单的SpringBoot整合Shiro的权限管理案例</h2><p><em>前些日子写了一个<a href="https://github.com/YUbuntu0109/Shiro-learning/tree/master/basic%20web%20project%20with%20shiro" target="_blank" rel="noopener">整合Shiro的基本Web案例</a>,然后又进阶地学习了SpringBoot整合Shiro的基本知识,继而今天总结一下 : 写一个基本的SpringBoot整合Shiro并集成EhCache的用户权限管理案例~ 该案例的代码仓库 : <a href="https://github.com/YUbuntu0109/Shiro-learning/tree/master/spring%20boot%20project%20with%20shiro" target="_blank" rel="noopener">https://github.com/YUbuntu0109/Shiro-learning/tree/master/spring%20boot%20project%20with%20shiro</a></em></p>
+            <h2 id="学习笔记-一个基础的SpringBoot整合Shiro案例"><a href="#学习笔记-一个基础的SpringBoot整合Shiro案例" class="headerlink" title="学习笔记 : 一个基础的SpringBoot整合Shiro案例"></a>学习笔记 : 一个基础的SpringBoot整合Shiro案例</h2><p><em>前些日子写了一个<a href="https://github.com/YUbuntu0109/Shiro-learning/tree/master/basic%20web%20project%20with%20shiro" target="_blank" rel="noopener">整合Shiro的基本Web案例</a>,然后又进阶地学习了SpringBoot整合Shiro的基本知识,继而今天总结一下 : 写一个基础的SpringBoot整合Shiro案例~ 该案例的代码仓库 : <a href="https://github.com/YUbuntu0109/Shiro-learning/tree/master/spring%20boot%20project%20with%20shiro" target="_blank" rel="noopener">https://github.com/YUbuntu0109/Shiro-learning/tree/master/spring%20boot%20project%20with%20shiro</a></em></p>
 <h3 id="数据库设计"><a href="#数据库设计" class="headerlink" title="数据库设计"></a>数据库设计</h3><p><em>数据库ER图如下所示 :</em><br><figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
-                    <img src="/2019/08/07/一个简单的SpringBoot整合Shiro的权限管理案例/shiro-learning-database-er.png" alt title>
+                    <img src="/2019/08/07/一个基础的SpringBoot整合Shiro案例/shiro-learning-database-er.png" alt title>
                 </div>
                 <div class="image-caption"></div>
             </figure></p>
@@ -254,56 +254,56 @@
 <h3 id="案例截屏解析"><a href="#案例截屏解析" class="headerlink" title="案例截屏解析"></a>案例截屏解析</h3><p><em>用户登录页,访问资源前必须先进行用户身份认证,详情参考资源拦截器中的配置信息哟</em><br><figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
-                    <img src="/2019/08/07/一个简单的SpringBoot整合Shiro的权限管理案例/springboot-shiro-用户登录页.PNG" alt title>
+                    <img src="/2019/08/07/一个基础的SpringBoot整合Shiro案例/springboot-shiro-用户登录页.PNG" alt title>
                 </div>
                 <div class="image-caption"></div>
             </figure></p>
 <p><em>若要访问教师 / 学生信息管理页,需要用户拥有<code>teaListView:view / stuListView:view</code>权限</em><br><figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
-                    <img src="/2019/08/07/一个简单的SpringBoot整合Shiro的权限管理案例/springboot-shiro-用户主页.PNG" alt title>
+                    <img src="/2019/08/07/一个基础的SpringBoot整合Shiro案例/springboot-shiro-用户主页.PNG" alt title>
                 </div>
                 <div class="image-caption"></div>
             </figure></p>
 <p><em>管理员( admin )拥有访问资源的所有权限( </em> ),所以可以操控学生信息页面中的任何操作*<br><figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
-                    <img src="/2019/08/07/一个简单的SpringBoot整合Shiro的权限管理案例/springboot-shiro-[admin]-学生信息管理页.PNG" alt title>
+                    <img src="/2019/08/07/一个基础的SpringBoot整合Shiro案例/springboot-shiro-[admin]-学生信息管理页.PNG" alt title>
                 </div>
                 <div class="image-caption"></div>
             </figure></p>
 <p><em>管理员( admin )拥有访问资源的所有权限( </em> ),所以可以操控教师信息页面中的任何操作*<br><figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
-                    <img src="/2019/08/07/一个简单的SpringBoot整合Shiro的权限管理案例/springboot-shiro-[admin]-教师信息管理页.PNG" alt title>
+                    <img src="/2019/08/07/一个基础的SpringBoot整合Shiro案例/springboot-shiro-[admin]-教师信息管理页.PNG" alt title>
                 </div>
                 <div class="image-caption"></div>
             </figure></p>
 <p><em>教师( tea )拥有学生页面的<code>stuListView:view , stuListView:add , stuListView:edit</code>权限,所以删除信息操作为不可见</em><br><figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
-                    <img src="/2019/08/07/一个简单的SpringBoot整合Shiro的权限管理案例/springboot-shiro-[tea]-学生信息管理页.PNG" alt title>
+                    <img src="/2019/08/07/一个基础的SpringBoot整合Shiro案例/springboot-shiro-[tea]-学生信息管理页.PNG" alt title>
                 </div>
                 <div class="image-caption"></div>
             </figure></p>
 <p><em>教师( tea )仅拥有教师信息管理页面的<code>teaListView:view</code>权限,所以增,删,改,操作为不可见状态</em><br><figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
-                    <img src="/2019/08/07/一个简单的SpringBoot整合Shiro的权限管理案例/springboot-shiro-[tea]-教师信息管理页.PNG" alt title>
+                    <img src="/2019/08/07/一个基础的SpringBoot整合Shiro案例/springboot-shiro-[tea]-教师信息管理页.PNG" alt title>
                 </div>
                 <div class="image-caption"></div>
             </figure></p>
 <p><em>学生( stu )仅拥有学生信息管理页面的<code>stuListView:view</code>权限,所以增,删,改,操作为不可见状态</em><br><figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
-                    <img src="/2019/08/07/一个简单的SpringBoot整合Shiro的权限管理案例/springboot-shiro-[stu]-学生信息管理页.PNG" alt title>
+                    <img src="/2019/08/07/一个基础的SpringBoot整合Shiro案例/springboot-shiro-[stu]-学生信息管理页.PNG" alt title>
                 </div>
                 <div class="image-caption"></div>
             </figure></p>
 <p><em>学生( stu )没有访问教师信息管理页面的权限,所以被资源拦截器所拦截继而进入指定的’unauthorized.html’页面</em><br><figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
-                    <img src="/2019/08/07/一个简单的SpringBoot整合Shiro的权限管理案例/springboot-shiro-[stu]-教师信息管理页.PNG" alt title>
+                    <img src="/2019/08/07/一个基础的SpringBoot整合Shiro案例/springboot-shiro-[stu]-教师信息管理页.PNG" alt title>
                 </div>
                 <div class="image-caption"></div>
             </figure></p>
@@ -316,7 +316,7 @@
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2019-08-11T03:59:41.399Z" itemprop="dateUpdated">2019-08-11 11:59:41</time>
+    Last updated: <time datetime="2019-08-12T01:13:12.139Z" itemprop="dateUpdated">2019-08-12 09:13:12</time>
 </span><br>
 
 
@@ -350,7 +350,7 @@
 <div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2019/08/07/一个简单的SpringBoot整合Shiro的权限管理案例/&title=《一个简单的SpringBoot整合Shiro的权限管理案例》 — 欢迎参观小灰灰的网站哟 ヾ(◍°∇°◍)ﾉﾞ ~&pic=http://yoursite.com/img/my-portrait.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2019/08/07/一个基础的SpringBoot整合Shiro案例/&title=《一个基础的SpringBoot整合Shiro案例》 — 欢迎参观小灰灰的网站哟 ヾ(◍°∇°◍)ﾉﾞ ~&pic=http://yoursite.com/img/my-portrait.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -360,22 +360,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2019/08/07/一个简单的SpringBoot整合Shiro的权限管理案例/&title=《一个简单的SpringBoot整合Shiro的权限管理案例》 — 欢迎参观小灰灰的网站哟 ヾ(◍°∇°◍)ﾉﾞ ~&source=My personal website ~" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2019/08/07/一个基础的SpringBoot整合Shiro案例/&title=《一个基础的SpringBoot整合Shiro案例》 — 欢迎参观小灰灰的网站哟 ヾ(◍°∇°◍)ﾉﾞ ~&source=My personal website ~" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2019/08/07/一个简单的SpringBoot整合Shiro的权限管理案例/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2019/08/07/一个基础的SpringBoot整合Shiro案例/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《一个简单的SpringBoot整合Shiro的权限管理案例》 — 欢迎参观小灰灰的网站哟 ヾ(◍°∇°◍)ﾉﾞ ~&url=http://yoursite.com/2019/08/07/一个简单的SpringBoot整合Shiro的权限管理案例/&via=http://yoursite.com" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《一个基础的SpringBoot整合Shiro案例》 — 欢迎参观小灰灰的网站哟 ヾ(◍°∇°◍)ﾉﾞ ~&url=http://yoursite.com/2019/08/07/一个基础的SpringBoot整合Shiro案例/&via=http://yoursite.com" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2019/08/07/一个简单的SpringBoot整合Shiro的权限管理案例/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2019/08/07/一个基础的SpringBoot整合Shiro案例/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -512,7 +512,7 @@
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2019/08/07/一个简单的SpringBoot整合Shiro的权限管理案例/&title=《一个简单的SpringBoot整合Shiro的权限管理案例》 — 欢迎参观小灰灰的网站哟 ヾ(◍°∇°◍)ﾉﾞ ~&pic=http://yoursite.com/img/my-portrait.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2019/08/07/一个基础的SpringBoot整合Shiro案例/&title=《一个基础的SpringBoot整合Shiro案例》 — 欢迎参观小灰灰的网站哟 ヾ(◍°∇°◍)ﾉﾞ ~&pic=http://yoursite.com/img/my-portrait.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -522,22 +522,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2019/08/07/一个简单的SpringBoot整合Shiro的权限管理案例/&title=《一个简单的SpringBoot整合Shiro的权限管理案例》 — 欢迎参观小灰灰的网站哟 ヾ(◍°∇°◍)ﾉﾞ ~&source=My personal website ~" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2019/08/07/一个基础的SpringBoot整合Shiro案例/&title=《一个基础的SpringBoot整合Shiro案例》 — 欢迎参观小灰灰的网站哟 ヾ(◍°∇°◍)ﾉﾞ ~&source=My personal website ~" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2019/08/07/一个简单的SpringBoot整合Shiro的权限管理案例/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2019/08/07/一个基础的SpringBoot整合Shiro案例/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《一个简单的SpringBoot整合Shiro的权限管理案例》 — 欢迎参观小灰灰的网站哟 ヾ(◍°∇°◍)ﾉﾞ ~&url=http://yoursite.com/2019/08/07/一个简单的SpringBoot整合Shiro的权限管理案例/&via=http://yoursite.com" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《一个基础的SpringBoot整合Shiro案例》 — 欢迎参观小灰灰的网站哟 ヾ(◍°∇°◍)ﾉﾞ ~&url=http://yoursite.com/2019/08/07/一个基础的SpringBoot整合Shiro案例/&via=http://yoursite.com" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2019/08/07/一个简单的SpringBoot整合Shiro的权限管理案例/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2019/08/07/一个基础的SpringBoot整合Shiro案例/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -548,7 +548,7 @@
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
-    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://yoursite.com/2019/08/07/一个简单的SpringBoot整合Shiro的权限管理案例/" alt="微信分享二维码">
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://yoursite.com/2019/08/07/一个基础的SpringBoot整合Shiro案例/" alt="微信分享二维码">
 </div>
 
 
