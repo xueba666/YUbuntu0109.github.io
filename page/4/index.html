@@ -172,6 +172,419 @@
     <ul class="post-list">
     
         <li class="post-list-item fade">
+            <article id="post-Shiro的拦截器机制" class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2019-08-03 08:01:57" datetime="2019-08-03T00:01:57.000Z" itemprop="datePublished">2019-08-03</time>
+
+        
+
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2019/08/03/Shiro的拦截器机制/">Shiro的拦截器机制</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        学习笔记 : Shiro的拦截机制默认拦截器Shiro内置了很多默认的拦截器,比如身份验证、授权等相关的.更多默认拦截器可以参考 org.apache.shiro.web.filter.mgt.DefaultFilter中的枚举拦截器,如下所示 :1234567891011121314151617181920212223242526272829303132333435363738394041...
+    
+
+        <a href="/2019/08/03/Shiro的拦截器机制/" class="post-more waves-effect waves-button">
+            Continue reading...
+        </a>
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/">Java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Shiro/">Shiro</a></li></ul>
+
+    </div>
+    
+</article>
+
+        </li>
+    
+        <li class="post-list-item fade">
+            <article id="post-Shiro之用户授权" class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2019-08-02 08:28:58" datetime="2019-08-02T00:28:58.000Z" itemprop="datePublished">2019-08-02</time>
+
+        
+
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2019/08/02/Shiro之用户授权/">Shiro之用户授权</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        学习笔记 : 详解Shiro的用户授权简介 : 授权,也叫访问控制,即在应用中控制谁能访问哪些资源(如访问页面/编辑数据/页面操作等). 在授权中需了解的几个关键对象 : 主体(Subject)、资源(Resource)、权限(Permission)、角色(Role),其解析如下所示 :
+
+主体 : 主体,即访问应用的用户,在Shiro中使用Subject代表该用户. 用户只有授权后才允许访...
+    
+
+        <a href="/2019/08/02/Shiro之用户授权/" class="post-more waves-effect waves-button">
+            Continue reading...
+        </a>
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/">Java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Shiro/">Shiro</a></li></ul>
+
+    </div>
+    
+</article>
+
+        </li>
+    
+        <li class="post-list-item fade">
+            <article id="post-Shiro之自定义realm及其加密" class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2019-08-01 18:49:46" datetime="2019-08-01T10:49:46.000Z" itemprop="datePublished">2019-08-01</time>
+
+        
+
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2019/08/01/Shiro之自定义realm及其加密/">Shiro之自定义realm及其加密</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        学习笔记 :  Shiro之自定义realm及其加密自定义RealmRealm : 域,Shiro从Realm获取安全数据(如用户、角色、权限),就是说SecurityManager要验证用户身份,那么它需要从Realm获取相应的用户进行比较以确定用户身份是否合法. 也需要从Realm得到用户相应的角色 / 权限进行验证用户是否能进行操作,可以把Realm看成 DataSource,即安全数...
+    
+
+        <a href="/2019/08/01/Shiro之自定义realm及其加密/" class="post-more waves-effect waves-button">
+            Continue reading...
+        </a>
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/">Java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Shiro/">Shiro</a></li></ul>
+
+    </div>
+    
+</article>
+
+        </li>
+    
+        <li class="post-list-item fade">
+            <article id="post-详解Shiro登录登出的操作流程" class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2019-08-01 13:48:07" datetime="2019-08-01T05:48:07.000Z" itemprop="datePublished">2019-08-01</time>
+
+        
+
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2019/08/01/详解Shiro登录登出的操作流程/">详解Shiro登录登出的操作流程</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        学习笔记 : 详解Shiro登录登出的操作流程在shiro中,用户需要提供principals(身份)和credentials(证明)给shiro,继而来验证用户的身份信息,最常见的princpals和 credentials组合就是用户名 / 密码啦~
+
+principals : 身份,即主体的标识属性,如用户名、邮箱等,需唯一. 一个主体可以有多个principals,但只有一个Prim...
+    
+
+        <a href="/2019/08/01/详解Shiro登录登出的操作流程/" class="post-more waves-effect waves-button">
+            Continue reading...
+        </a>
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/">Java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Shiro/">Shiro</a></li></ul>
+
+    </div>
+    
+</article>
+
+        </li>
+    
+        <li class="post-list-item fade">
+            <article id="post-Hi-Shiro" class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2019-07-31 14:23:55" datetime="2019-07-31T06:23:55.000Z" itemprop="datePublished">2019-07-31</time>
+
+        
+
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2019/07/31/Hi-Shiro/">Hi Shiro ~</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        学习笔记 : 初识Shiro ~简介 : Apache Shiro是一个强大易用的Java安全框架,提供了认证、授权、加密和会话管理等功能，对于任何一个应用程序,Shiro都可以提供全面的安全管理服务
+权限管理包括用户身份认证和授权两个部分,简称认证授权
+
+身份认证 : 为判断用户是否为合法用户的过程,最常用的身份认证方式就是系统通过核对用户输入的用户名和口令,将其与系统中存储的该用户信息相...
+    
+
+        <a href="/2019/07/31/Hi-Shiro/" class="post-more waves-effect waves-button">
+            Continue reading...
+        </a>
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/">Java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Shiro/">Shiro</a></li></ul>
+
+    </div>
+    
+</article>
+
+        </li>
+    
+        <li class="post-list-item fade">
+            <article id="post-How-to-create-a-pull-request-from-a-fork" class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2019-07-29 18:03:07" datetime="2019-07-29T10:03:07.000Z" itemprop="datePublished">2019-07-29</time>
+
+        
+
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2019/07/29/How-to-create-a-pull-request-from-a-fork/">How to create a pull request from a fork</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        学习笔记 : 如何在fork的仓库中创建一个pull request请求如果你创建了仓库的分叉并对分叉进行了更改,你可以创建一个拉取请求来请求上游仓库接受你的更改. 至于说如何正确使用分支请参阅官方文档 : https://help.github.com/en/articles/working-with-forks
+详细步骤
+导航到从其中创建分叉的原始仓库
+
+
+在Branch(分支)菜单的右...
+    
+
+        <a href="/2019/07/29/How-to-create-a-pull-request-from-a-fork/" class="post-more waves-effect waves-button">
+            Continue reading...
+        </a>
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/GitHub/">GitHub</a></li></ul>
+
+    </div>
+    
+</article>
+
+        </li>
+    
+        <li class="post-list-item fade">
+            <article id="post-A-simple-comment-component-for-Vue" class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2019-07-25 11:11:04" datetime="2019-07-25T03:11:04.000Z" itemprop="datePublished">2019-07-25</time>
+
+        
+
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2019/07/25/A-simple-comment-component-for-Vue/">A simple comment component for Vue</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        案例笔记 : 一个简单的Vue评论框组件在写完案例 : 一个基于Vue.js的简单信息管理页后,小哥又初步学习了Vue.js组件的定义及基本用法,来为此再写一个小总结案例吧~ 这是一个简单的评论框组件 : 发表评论(将其存储到Local Storage)~ 该程序其它版本见 : https://github.com/YUbuntu0109/vue-learning
+(simple compo...
+    
+
+        <a href="/2019/07/25/A-simple-comment-component-for-Vue/" class="post-more waves-effect waves-button">
+            Continue reading...
+        </a>
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Vue/">Vue</a></li></ul>
+
+    </div>
+    
+</article>
+
+        </li>
+    
+        <li class="post-list-item fade">
+            <article id="post-一个基于Vue的简单信息管理页" class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2019-07-24 20:02:22" datetime="2019-07-24T12:02:22.000Z" itemprop="datePublished">2019-07-24</time>
+
+        
+
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2019/07/24/一个基于Vue的简单信息管理页/">一个基于Vue的简单信息管理页</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        案例笔记 : 一个基于Vue.js的简单信息管理页初步学习完Vue.js的基本语法、数据绑定视图机制、事件绑定、自定义指令、过滤器后,来尝试写一个总结案例吧~ 该案例的主要功能是一个简单的信息管理 : 增加,删除,查找. 该程序其它版本见 : https://github.com/YUbuntu0109/vue-learning
+(simple demo program v1.2/demo-...
+    
+
+        <a href="/2019/07/24/一个基于Vue的简单信息管理页/" class="post-more waves-effect waves-button">
+            Continue reading...
+        </a>
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Vue/">Vue</a></li></ul>
+
+    </div>
+    
+</article>
+
+        </li>
+    
+        <li class="post-list-item fade">
+            <article id="post-Vue组件的定义及基本用法" class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2019-07-24 19:57:46" datetime="2019-07-24T11:57:46.000Z" itemprop="datePublished">2019-07-24</time>
+
+        
+
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2019/07/24/Vue组件的定义及基本用法/">Vue组件的定义及基本用法</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        学习笔记 : Vue组件的定义及基本的使用方法组件的出现,是为了拆分实例的代码量的,继而能够让我们以不同的组件来划分不同功能模块. 组件是可复用的Vue实例,所以它们与new Vue接收相同的选项,例如 data、computed、watch、methods以及生命周期钩子等 ..
+
+组件化 : 从代码逻辑的角度进行划分,保证每个功能模块的职能单一
+模块化 : 从UI设计的角度进行划分,保证...
+    
+
+        <a href="/2019/07/24/Vue组件的定义及基本用法/" class="post-more waves-effect waves-button">
+            Continue reading...
+        </a>
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Vue/">Vue</a></li></ul>
+
+    </div>
+    
+</article>
+
+        </li>
+    
+        <li class="post-list-item fade">
             <article id="post-Vue-js的自定义指令与过滤器" class="article-card article-type-post" itemprop="blogPost">
 
     <div class="post-meta">
@@ -218,421 +631,12 @@ inserted : 被绑定元素插入父...
 
         </li>
     
-        <li class="post-list-item fade">
-            <article id="post-Vue-js的数据响应式原理" class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2019-07-21 14:32:26" datetime="2019-07-21T06:32:26.000Z" itemprop="datePublished">2019-07-21</time>
-
-        
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2019/07/21/Vue-js的数据响应式原理/">Vue.js的数据响应式原理</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        学习笔记 : Vue.js对的数据响应式原理简介 : Vue中最重要的概念就是响应式数据,一方面是指衍生和元数据之间的响应,通过数据链来实现. 另一方面是指视图与数据之间的绑定 .
-初始数据链数据链在学术上被定义为连通数据的链路,在这条链路上有一到多个数据起点(元数据),并通过改点不断衍生扩展新的节点(衍生数据),形成 一个庞大的网状结构. 当你修改数据起点时, 所有存在网上的节点值都将会同...
-    
-
-        <a href="/2019/07/21/Vue-js的数据响应式原理/" class="post-more waves-effect waves-button">
-            Continue reading...
-        </a>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Vue/">Vue</a></li></ul>
-
-    </div>
-    
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-Vue-js的语法" class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2019-07-21 11:14:08" datetime="2019-07-21T03:14:08.000Z" itemprop="datePublished">2019-07-21</time>
-
-        
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2019/07/21/Vue-js的语法/">Vue.js的语法</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        学习笔记 : Vue.js的语法数值绑定文本插值文本插值的方式十分简单,只需使用双括号(Mustache语法)将要绑定的变量,值,表达式括住即可,Vue将会获取计算后的值,并以文本的形式将其展示出来 .123456789&lt;div id="app"&gt;&#123;&#123; message &#125;&#125;&lt;/div&gt;&lt;script&gt;	var app...
-    
-
-        <a href="/2019/07/21/Vue-js的语法/" class="post-more waves-effect waves-button">
-            Continue reading...
-        </a>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Vue/">Vue</a></li></ul>
-
-    </div>
-    
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-Vue-js的生命周期" class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2019-07-20 21:56:19" datetime="2019-07-20T13:56:19.000Z" itemprop="datePublished">2019-07-20</time>
-
-        
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2019/07/20/Vue-js的生命周期/">Vue.js的生命周期</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        学习笔记 : 详解Vue.js的生命周期Vue实例的生命周期函数从Vue实例创建,运行,到销毁期间,总是伴随着各种各样的事件,这些事件统称为生命周期,至于生命周期钩子只不过是生命周期事件的别名而已. 其生命周期图如下所示 :
-
-                
-                    
-                    
-                
-       ...
-    
-
-        <a href="/2019/07/20/Vue-js的生命周期/" class="post-more waves-effect waves-button">
-            Continue reading...
-        </a>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Vue/">Vue</a></li></ul>
-
-    </div>
-    
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-Hi-Vue" class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2019-07-19 19:35:40" datetime="2019-07-19T11:35:40.000Z" itemprop="datePublished">2019-07-19</time>
-
-        
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2019/07/19/Hi-Vue/">Hi Vue ~</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        学习笔记 : 拥抱Vue ~传统的网站开发一般采用HTML,CSS,JS作为技术架构,而Vue立足于其上,并以模板语法为基础,数据绑定和组件化开发为核心,极大地简化了项目的开发流程 ~
-Vue简介Vue.js是一套轻量级MVVM框架,由时任前Google工程师(现任阿里Week团队技术顾问)的尤雨溪创造并开源,与其它重量级的框架不同的是,Vue的核心库只关注视图层,并且提供尽可能简单的API...
-    
-
-        <a href="/2019/07/19/Hi-Vue/" class="post-more waves-effect waves-button">
-            Continue reading...
-        </a>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Vue/">Vue</a></li></ul>
-
-    </div>
-    
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-小爬虫-JDBookCrawler-V3-0" class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2019-07-17 20:34:24" datetime="2019-07-17T12:34:24.000Z" itemprop="datePublished">2019-07-17</time>
-
-        
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2019/07/17/小爬虫-JDBookCrawler-V3-0/">小爬虫:JDBookCrawler-V3.0</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        爬虫项目笔记 : JDBookCrawler-V3.0简介 : JDBookCrawler 3.0的爬虫功能基于JDBookCrawler 2.0,前端设计参考项目SpringBoot-curd-memo,简单点说v3.0等于v2.0+Spring Boot,😅不尴尬嘻嘻~
-项目概述项目结构图1234567891011121314151617181920212223242526272829...
-    
-
-        <a href="/2019/07/17/小爬虫-JDBookCrawler-V3-0/" class="post-more waves-effect waves-button">
-            Continue reading...
-        </a>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Crawler/">Crawler</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/">Java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MyBatis/">MyBatis</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MySQL/">MySQL</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/WebMagic/">WebMagic</a></li></ul>
-
-    </div>
-    
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-Understanding-the-GitHub-flow" class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2019-07-16 07:45:10" datetime="2019-07-15T23:45:10.000Z" itemprop="datePublished">2019-07-16</time>
-
-        
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2019/07/16/Understanding-the-GitHub-flow/">Understanding the GitHub flow</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        学习笔记 : GitHub工作流程GitHub流程(Git flow的简化版)是一种轻量级,基于分支的工作流程,支持定期进行部署的团队和项目. 本篇文章诠释了GitHub流程的工作原理及流程 .
-GitHub工作流程可以简单地分为以下步骤 :
-
-第一步 : 根据需求,从master拉出新分支(不区分功能分支或补丁分支) .
-第二步 : 新分支开发完成后需要合并,谈论时,就需要向master发...
-    
-
-        <a href="/2019/07/16/Understanding-the-GitHub-flow/" class="post-more waves-effect waves-button">
-            Continue reading...
-        </a>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/GitHub/">GitHub</a></li></ul>
-
-    </div>
-    
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-小爬虫-JDBookCrawler-V2-0" class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2019-07-15 16:41:47" datetime="2019-07-15T08:41:47.000Z" itemprop="datePublished">2019-07-15</time>
-
-        
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2019/07/15/小爬虫-JDBookCrawler-V2-0/">小爬虫:JDBookCrawler-V2.0</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        爬虫项目笔记 : JDBookCrawler-V2.0简介 : 最近在学习爬虫技术,学习HttpClient,Jsoup后,又浅薄地学习了WebMagic爬虫框架嘿嘿,为了总结知识点继而用其重写了JDBookCrawler-V1.0,其功能为 : 爬取京东商城书籍数据. 程序已Psuh到GitHub : https://github.com/YUbuntu0109/Crawler-learn...
-    
-
-        <a href="/2019/07/15/小爬虫-JDBookCrawler-V2-0/" class="post-more waves-effect waves-button">
-            Continue reading...
-        </a>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Crawler/">Crawler</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/">Java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MyBatis/">MyBatis</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MySQL/">MySQL</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/WebMagic/">WebMagic</a></li></ul>
-
-    </div>
-    
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-小爬虫-JDBookCrawler-V1-0" class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2019-07-14 13:30:47" datetime="2019-07-14T05:30:47.000Z" itemprop="datePublished">2019-07-14</time>
-
-        
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2019/07/14/小爬虫-JDBookCrawler-V1-0/">小爬虫:JDBookCrawler-V1.0</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        爬虫项目笔记 : JDBookCrawler-V1.0简介 : 最近在学习爬虫技术,浅薄学习HttpClient,Jsoup后,为了总结知识点既而写了这个小爬虫 : 爬取京东商城书籍数据. 程序已Psuh到GitHub : https://github.com/YUbuntu0109/Crawler-learning/tree/master/BookCrawler-v1.0/bookcraw...
-    
-
-        <a href="/2019/07/14/小爬虫-JDBookCrawler-V1-0/" class="post-more waves-effect waves-button">
-            Continue reading...
-        </a>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Crawler/">Crawler</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HttpClient/">HttpClient</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/">Java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Jsoup/">Jsoup</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MySQL/">MySQL</a></li></ul>
-
-    </div>
-    
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-Java爬虫之WebMagic" class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2019-07-12 19:58:43" datetime="2019-07-12T11:58:43.000Z" itemprop="datePublished">2019-07-12</time>
-
-        
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2019/07/12/Java爬虫之WebMagic/">Java爬虫之WebMagic</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        学习笔记 :  Java爬虫之WebMagic简介 : WebMagic是一款简单灵活的爬虫框架,WebMagic的结构分为Downloader、PageProcessor、Scheduler、Pipeline四大组件,并由Spider将它们彼此组织起来. 这四大组件对应爬虫生命周期中的下载、处理、管理和持久化等功能. 而Spider则将这几个组件组织起来，让它们可以互相交互，流程化的执行，...
-    
-
-        <a href="/2019/07/12/Java爬虫之WebMagic/" class="post-more waves-effect waves-button">
-            Continue reading...
-        </a>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/">Java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/WebMagic/">WebMagic</a></li></ul>
-
-    </div>
-    
-</article>
-
-        </li>
-    
     </ul>
 
     
 <nav id="page-nav">
     <div class="inner">
-    <a class="extend prev" rel="prev" href="/page/3/">上一页</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><span class="space">&hellip;</span><a class="page-number" href="/page/13/">13</a><a class="extend next" rel="next" href="/page/5/">下一页</a>
+    <a class="extend prev" rel="prev" href="/page/3/">上一页</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><span class="space">&hellip;</span><a class="page-number" href="/page/14/">14</a><a class="extend next" rel="next" href="/page/5/">下一页</a>
     </div>
 </nav>
 
