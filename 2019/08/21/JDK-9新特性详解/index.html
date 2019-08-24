@@ -25,11 +25,11 @@
 <meta name="keywords" content="JDK9">
 <meta property="og:type" content="article">
 <meta property="og:title" content="详解JDK 9中的新特性">
-<meta property="og:url" content="http://yoursite.com/2019/08/21/详解JDK 9中的新特性/index.html">
+<meta property="og:url" content="http://yoursite.com/2019/08/21/JDK-9新特性详解/index.html">
 <meta property="og:site_name" content="欢迎参观小灰灰的网站哟 ヾ(◍°∇°◍)ﾉﾞ ~">
 <meta property="og:description" content="学习笔记 : 详解JDK 9中的新特性由于 JDK9 中下面两个特性很重要,所有小哥我就单独分开写啦~  详解JDK 9中的新特性 : JDK 9目录结构的变化及新特性之模块化  详解JDK 9中的新特性 : JDK 9新特性之REPL(JShell)  接口的私有方法Java 8 中规定接口中的方法除了抽象方法之外,还可以定义静态和默认的方法. 一定程度上扩展了接口的功能,此时的接口更像是一个抽">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-08-21T07:11:56.420Z">
+<meta property="og:updated_time" content="2019-08-23T03:53:54.976Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="详解JDK 9中的新特性">
 <meta name="twitter:description" content="学习笔记 : 详解JDK 9中的新特性由于 JDK9 中下面两个特性很重要,所有小哥我就单独分开写啦~  详解JDK 9中的新特性 : JDK 9目录结构的变化及新特性之模块化  详解JDK 9中的新特性 : JDK 9新特性之REPL(JShell)  接口的私有方法Java 8 中规定接口中的方法除了抽象方法之外,还可以定义静态和默认的方法. 一定程度上扩展了接口的功能,此时的接口更像是一个抽">
@@ -183,7 +183,7 @@
     </aside>
 
 
-<article id="post-详解JDK 9中的新特性" class="post-article article-type-post fade" itemprop="blogPost">
+<article id="post-JDK-9新特性详解" class="post-article article-type-post fade" itemprop="blogPost">
 
     <div class="post-card">
         <h1 class="post-card-title">详解JDK 9中的新特性</h1>
@@ -233,7 +233,7 @@
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2019-08-21T07:11:56.420Z" itemprop="dateUpdated">2019-08-21 15:11:56</time>
+    Last updated: <time datetime="2019-08-23T03:53:54.976Z" itemprop="dateUpdated">2019-08-23 11:53:54</time>
 </span><br>
 
 
@@ -267,7 +267,7 @@
 <div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2019/08/21/详解JDK 9中的新特性/&title=《详解JDK 9中的新特性》 — 欢迎参观小灰灰的网站哟 ヾ(◍°∇°◍)ﾉﾞ ~&pic=http://yoursite.com/img/my-portrait.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2019/08/21/JDK-9新特性详解/&title=《详解JDK 9中的新特性》 — 欢迎参观小灰灰的网站哟 ヾ(◍°∇°◍)ﾉﾞ ~&pic=http://yoursite.com/img/my-portrait.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -277,22 +277,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2019/08/21/详解JDK 9中的新特性/&title=《详解JDK 9中的新特性》 — 欢迎参观小灰灰的网站哟 ヾ(◍°∇°◍)ﾉﾞ ~&source=My personal website ~" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2019/08/21/JDK-9新特性详解/&title=《详解JDK 9中的新特性》 — 欢迎参观小灰灰的网站哟 ヾ(◍°∇°◍)ﾉﾞ ~&source=My personal website ~" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2019/08/21/详解JDK 9中的新特性/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2019/08/21/JDK-9新特性详解/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《详解JDK 9中的新特性》 — 欢迎参观小灰灰的网站哟 ヾ(◍°∇°◍)ﾉﾞ ~&url=http://yoursite.com/2019/08/21/详解JDK 9中的新特性/&via=http://yoursite.com" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《详解JDK 9中的新特性》 — 欢迎参观小灰灰的网站哟 ヾ(◍°∇°◍)ﾉﾞ ~&url=http://yoursite.com/2019/08/21/JDK-9新特性详解/&via=http://yoursite.com" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2019/08/21/详解JDK 9中的新特性/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2019/08/21/JDK-9新特性详解/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -315,7 +315,7 @@
 <nav class="post-nav flex-row flex-justify-between">
   
     <div class="waves-block waves-effect prev">
-      <a href="/2019/08/21/详解JDK-10中的新特性/" id="post-prev" class="post-nav-link">
+      <a href="/2019/08/21/JDK-10新特性详解/" id="post-prev" class="post-nav-link">
         <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
         <h4 class="title">详解JDK 10中的新特性</h4>
       </a>
@@ -429,7 +429,7 @@
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2019/08/21/详解JDK 9中的新特性/&title=《详解JDK 9中的新特性》 — 欢迎参观小灰灰的网站哟 ヾ(◍°∇°◍)ﾉﾞ ~&pic=http://yoursite.com/img/my-portrait.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2019/08/21/JDK-9新特性详解/&title=《详解JDK 9中的新特性》 — 欢迎参观小灰灰的网站哟 ヾ(◍°∇°◍)ﾉﾞ ~&pic=http://yoursite.com/img/my-portrait.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -439,22 +439,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2019/08/21/详解JDK 9中的新特性/&title=《详解JDK 9中的新特性》 — 欢迎参观小灰灰的网站哟 ヾ(◍°∇°◍)ﾉﾞ ~&source=My personal website ~" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2019/08/21/JDK-9新特性详解/&title=《详解JDK 9中的新特性》 — 欢迎参观小灰灰的网站哟 ヾ(◍°∇°◍)ﾉﾞ ~&source=My personal website ~" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2019/08/21/详解JDK 9中的新特性/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2019/08/21/JDK-9新特性详解/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《详解JDK 9中的新特性》 — 欢迎参观小灰灰的网站哟 ヾ(◍°∇°◍)ﾉﾞ ~&url=http://yoursite.com/2019/08/21/详解JDK 9中的新特性/&via=http://yoursite.com" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《详解JDK 9中的新特性》 — 欢迎参观小灰灰的网站哟 ヾ(◍°∇°◍)ﾉﾞ ~&url=http://yoursite.com/2019/08/21/JDK-9新特性详解/&via=http://yoursite.com" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2019/08/21/详解JDK 9中的新特性/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2019/08/21/JDK-9新特性详解/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -465,7 +465,7 @@
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
-    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://yoursite.com/2019/08/21/详解JDK 9中的新特性/" alt="微信分享二维码">
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://yoursite.com/2019/08/21/JDK-9新特性详解/" alt="微信分享二维码">
 </div>
 
 

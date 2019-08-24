@@ -14,25 +14,25 @@
     
     
     
-    <title>Java 8新特性之Stream流的基本使用 | 欢迎参观小灰灰的网站哟 ヾ(◍°∇°◍)ﾉﾞ ~ | My Personal blog website —— be founded on March 9, 2019</title>
+    <title>JDK 8新特性之Stream流的基本使用 | 欢迎参观小灰灰的网站哟 ヾ(◍°∇°◍)ﾉﾞ ~ | My Personal blog website —— be founded on March 9, 2019</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="theme-color" content="#3F51B5">
     
     
     <meta name="keywords" content="JDK8">
-    <meta name="description" content="学习笔记 :  Java 8新特性之Stream流的基本使用简介Java 8 API添加了一个新的抽象称为Stream流,其让你以一种声明的方式处理数据. Stream 使用一种类似用 SQL 语句从数据库查询数据的直观方式来提供一种对 Java 集合运算和表达的高阶抽象. 其 API 可以极大提高Java程序员的生产力,让程序员写出高效率、干净、简洁的代码. 其把将要处理的元素集合看作一种流,">
+    <meta name="description" content="学习笔记 : JDK 8新特性之Stream流的基本使用简介Java 8 API添加了一个新的抽象称为Stream流,其让你以一种声明的方式处理数据. Stream 使用一种类似用 SQL 语句从数据库查询数据的直观方式来提供一种对 Java 集合运算和表达的高阶抽象. 其 API 可以极大提高Java程序员的生产力,让程序员写出高效率、干净、简洁的代码. 其把将要处理的元素集合看作一种流, 流在">
 <meta name="keywords" content="JDK8">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Java 8新特性之Stream流的基本使用">
-<meta property="og:url" content="http://yoursite.com/2019/08/18/Java-8新特性之Stream流的基本使用/index.html">
+<meta property="og:title" content="JDK 8新特性之Stream流的基本使用">
+<meta property="og:url" content="http://yoursite.com/2019/08/18/JDK-8新特性之Stream流的基本使用/index.html">
 <meta property="og:site_name" content="欢迎参观小灰灰的网站哟 ヾ(◍°∇°◍)ﾉﾞ ~">
-<meta property="og:description" content="学习笔记 :  Java 8新特性之Stream流的基本使用简介Java 8 API添加了一个新的抽象称为Stream流,其让你以一种声明的方式处理数据. Stream 使用一种类似用 SQL 语句从数据库查询数据的直观方式来提供一种对 Java 集合运算和表达的高阶抽象. 其 API 可以极大提高Java程序员的生产力,让程序员写出高效率、干净、简洁的代码. 其把将要处理的元素集合看作一种流,">
+<meta property="og:description" content="学习笔记 : JDK 8新特性之Stream流的基本使用简介Java 8 API添加了一个新的抽象称为Stream流,其让你以一种声明的方式处理数据. Stream 使用一种类似用 SQL 语句从数据库查询数据的直观方式来提供一种对 Java 集合运算和表达的高阶抽象. 其 API 可以极大提高Java程序员的生产力,让程序员写出高效率、干净、简洁的代码. 其把将要处理的元素集合看作一种流, 流在">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-08-19T04:07:29.692Z">
+<meta property="og:updated_time" content="2019-08-23T03:48:24.717Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Java 8新特性之Stream流的基本使用">
-<meta name="twitter:description" content="学习笔记 :  Java 8新特性之Stream流的基本使用简介Java 8 API添加了一个新的抽象称为Stream流,其让你以一种声明的方式处理数据. Stream 使用一种类似用 SQL 语句从数据库查询数据的直观方式来提供一种对 Java 集合运算和表达的高阶抽象. 其 API 可以极大提高Java程序员的生产力,让程序员写出高效率、干净、简洁的代码. 其把将要处理的元素集合看作一种流,">
+<meta name="twitter:title" content="JDK 8新特性之Stream流的基本使用">
+<meta name="twitter:description" content="学习笔记 : JDK 8新特性之Stream流的基本使用简介Java 8 API添加了一个新的抽象称为Stream流,其让你以一种声明的方式处理数据. Stream 使用一种类似用 SQL 语句从数据库查询数据的直观方式来提供一种对 Java 集合运算和表达的高阶抽象. 其 API 可以极大提高Java程序员的生产力,让程序员写出高效率、干净、简洁的代码. 其把将要处理的元素集合看作一种流, 流在">
     
         <link rel="alternate" type="application/atom+xml" title="欢迎参观小灰灰的网站哟 ヾ(◍°∇°◍)ﾉﾞ ~" href="/atom.xml">
     
@@ -127,7 +127,7 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">Java 8新特性之Stream流的基本使用</div>
+        <div class="flex-col header-title ellipsis">JDK 8新特性之Stream流的基本使用</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -155,7 +155,7 @@
 <header class="content-header post-header">
 
     <div class="container fade-scale">
-        <h1 class="title">Java 8新特性之Stream流的基本使用</h1>
+        <h1 class="title">JDK 8新特性之Stream流的基本使用</h1>
         <h5 class="subtitle">
             
                 <time datetime="2019-08-18T13:09:29.000Z" itemprop="datePublished" class="page-time">
@@ -178,15 +178,15 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
             <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#学习笔记-Java-8新特性之Stream流的基本使用"><span class="post-toc-number">1.</span> <span class="post-toc-text">学习笔记 :  Java 8新特性之Stream流的基本使用</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#简介"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">简介</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#特征"><span class="post-toc-number">1.1.1.</span> <span class="post-toc-text">特征</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#获取Stream流的方式"><span class="post-toc-number">1.1.2.</span> <span class="post-toc-text">获取Stream流的方式</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Stream流的常用方法"><span class="post-toc-number">1.1.3.</span> <span class="post-toc-text">Stream流的常用方法</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#程序示例-对比"><span class="post-toc-number">1.1.4.</span> <span class="post-toc-text">程序示例(对比)</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#获取Stream流的两种方式"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">获取Stream流的两种方式</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#forEach方法"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">forEach方法</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#复习Consumer接口"><span class="post-toc-number">1.3.1.</span> <span class="post-toc-text">复习Consumer接口</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#基本使用"><span class="post-toc-number">1.3.2.</span> <span class="post-toc-text">基本使用</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#filter方法"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">filter方法</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#复习Predicate接口"><span class="post-toc-number">1.4.1.</span> <span class="post-toc-text">复习Predicate接口</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#基本使用-1"><span class="post-toc-number">1.4.2.</span> <span class="post-toc-text">基本使用</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#map方法"><span class="post-toc-number">1.5.</span> <span class="post-toc-text">map方法</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#复习Function接口"><span class="post-toc-number">1.5.1.</span> <span class="post-toc-text">复习Function接口</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#基本使用-2"><span class="post-toc-number">1.5.2.</span> <span class="post-toc-text">基本使用</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#count方法"><span class="post-toc-number">1.6.</span> <span class="post-toc-text">count方法</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#基本使用-3"><span class="post-toc-number">1.6.1.</span> <span class="post-toc-text">基本使用</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#limit方法"><span class="post-toc-number">1.7.</span> <span class="post-toc-text">limit方法</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#基本使用-4"><span class="post-toc-number">1.7.1.</span> <span class="post-toc-text">基本使用</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#skip方法"><span class="post-toc-number">1.8.</span> <span class="post-toc-text">skip方法</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#基本使用-5"><span class="post-toc-number">1.8.1.</span> <span class="post-toc-text">基本使用</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#concat方法"><span class="post-toc-number">1.9.</span> <span class="post-toc-text">concat方法</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#基本使用-6"><span class="post-toc-number">1.9.1.</span> <span class="post-toc-text">基本使用</span></a></li></ol></li></ol></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#学习笔记-JDK-8新特性之Stream流的基本使用"><span class="post-toc-number">1.</span> <span class="post-toc-text">学习笔记 : JDK 8新特性之Stream流的基本使用</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#简介"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">简介</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#特征"><span class="post-toc-number">1.1.1.</span> <span class="post-toc-text">特征</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#获取Stream流的方式"><span class="post-toc-number">1.1.2.</span> <span class="post-toc-text">获取Stream流的方式</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Stream流的常用方法"><span class="post-toc-number">1.1.3.</span> <span class="post-toc-text">Stream流的常用方法</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#程序示例-对比"><span class="post-toc-number">1.1.4.</span> <span class="post-toc-text">程序示例(对比)</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#获取Stream流的两种方式"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">获取Stream流的两种方式</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#forEach方法"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">forEach方法</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#复习Consumer接口"><span class="post-toc-number">1.3.1.</span> <span class="post-toc-text">复习Consumer接口</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#基本使用"><span class="post-toc-number">1.3.2.</span> <span class="post-toc-text">基本使用</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#filter方法"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">filter方法</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#复习Predicate接口"><span class="post-toc-number">1.4.1.</span> <span class="post-toc-text">复习Predicate接口</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#基本使用-1"><span class="post-toc-number">1.4.2.</span> <span class="post-toc-text">基本使用</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#map方法"><span class="post-toc-number">1.5.</span> <span class="post-toc-text">map方法</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#复习Function接口"><span class="post-toc-number">1.5.1.</span> <span class="post-toc-text">复习Function接口</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#基本使用-2"><span class="post-toc-number">1.5.2.</span> <span class="post-toc-text">基本使用</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#count方法"><span class="post-toc-number">1.6.</span> <span class="post-toc-text">count方法</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#基本使用-3"><span class="post-toc-number">1.6.1.</span> <span class="post-toc-text">基本使用</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#limit方法"><span class="post-toc-number">1.7.</span> <span class="post-toc-text">limit方法</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#基本使用-4"><span class="post-toc-number">1.7.1.</span> <span class="post-toc-text">基本使用</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#skip方法"><span class="post-toc-number">1.8.</span> <span class="post-toc-text">skip方法</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#基本使用-5"><span class="post-toc-number">1.8.1.</span> <span class="post-toc-text">基本使用</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#concat方法"><span class="post-toc-number">1.9.</span> <span class="post-toc-text">concat方法</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#基本使用-6"><span class="post-toc-number">1.9.1.</span> <span class="post-toc-text">基本使用</span></a></li></ol></li></ol></li></ol>
         </nav>
     </aside>
 
 
-<article id="post-Java-8新特性之Stream流的基本使用" class="post-article article-type-post fade" itemprop="blogPost">
+<article id="post-JDK-8新特性之Stream流的基本使用" class="post-article article-type-post fade" itemprop="blogPost">
 
     <div class="post-card">
-        <h1 class="post-card-title">Java 8新特性之Stream流的基本使用</h1>
+        <h1 class="post-card-title">JDK 8新特性之Stream流的基本使用</h1>
         <div class="post-meta">
             <time class="post-time" title="2019-08-18 21:09:29" datetime="2019-08-18T13:09:29.000Z" itemprop="datePublished">2019-08-18</time>
 
@@ -197,7 +197,7 @@
 
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <h2 id="学习笔记-Java-8新特性之Stream流的基本使用"><a href="#学习笔记-Java-8新特性之Stream流的基本使用" class="headerlink" title="学习笔记 :  Java 8新特性之Stream流的基本使用"></a>学习笔记 :  Java 8新特性之Stream流的基本使用</h2><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p><em>Java 8 API添加了一个新的抽象称为<code>Stream流</code>,其让你以一种声明的方式处理数据. Stream 使用一种类似用 SQL 语句从数据库查询数据的直观方式来提供一种对 Java 集合运算和表达的高阶抽象. 其 API 可以极大提高Java程序员的生产力,让程序员写出高效率、干净、简洁的代码. 其把将要处理的元素集合看作一种流, 流在管道中传输, 并且可以在管道的节点上进行处理, 比如筛选,排序,聚合等, 元素流在管道中经过中间操作 (intermediate operation) 的处理,最后由最终操作 (terminal operation) 得到前面处理的结果</em></p>
+            <h2 id="学习笔记-JDK-8新特性之Stream流的基本使用"><a href="#学习笔记-JDK-8新特性之Stream流的基本使用" class="headerlink" title="学习笔记 : JDK 8新特性之Stream流的基本使用"></a>学习笔记 : JDK 8新特性之Stream流的基本使用</h2><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p><em>Java 8 API添加了一个新的抽象称为<code>Stream流</code>,其让你以一种声明的方式处理数据. Stream 使用一种类似用 SQL 语句从数据库查询数据的直观方式来提供一种对 Java 集合运算和表达的高阶抽象. 其 API 可以极大提高Java程序员的生产力,让程序员写出高效率、干净、简洁的代码. 其把将要处理的元素集合看作一种流, 流在管道中传输, 并且可以在管道的节点上进行处理, 比如筛选,排序,聚合等, 元素流在管道中经过中间操作 (intermediate operation) 的处理,最后由最终操作 (terminal operation) 得到前面处理的结果</em></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">+--------------------+       +------+   +------+   +---+   +-------+</span><br><span class="line">| stream of elements +-----&gt; |filter+-&gt; |sorted+-&gt; |map+-&gt; |collect|</span><br><span class="line">+--------------------+       +------+   +------+   +---+   +-------+</span><br></pre></td></tr></table></figure>
 <p><em>以上的流程可以转换Java代码 :</em><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">List&lt;Integer&gt; transactionsIds = </span><br><span class="line">widgets.stream()</span><br><span class="line">        .filter(b -&gt; b.getColor() == RED)</span><br><span class="line">        .sorted((x,y) -&gt; x.getWeight() - y.getWeight())</span><br><span class="line">        .mapToInt(Widget::getWeight)</span><br><span class="line">        .sum();</span><br></pre></td></tr></table></figure></p>
 <h4 id="特征"><a href="#特征" class="headerlink" title="特征"></a>特征</h4><p><em>Stream (流) 是一个来自数据源的元素队列并支持聚合操作 :</em></p>
@@ -250,7 +250,7 @@
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2019-08-19T04:07:29.692Z" itemprop="dateUpdated">2019-08-19 12:07:29</time>
+    Last updated: <time datetime="2019-08-23T03:48:24.717Z" itemprop="dateUpdated">2019-08-23 11:48:24</time>
 </span><br>
 
 
@@ -284,7 +284,7 @@
 <div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2019/08/18/Java-8新特性之Stream流的基本使用/&title=《Java 8新特性之Stream流的基本使用》 — 欢迎参观小灰灰的网站哟 ヾ(◍°∇°◍)ﾉﾞ ~&pic=http://yoursite.com/img/my-portrait.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2019/08/18/JDK-8新特性之Stream流的基本使用/&title=《JDK 8新特性之Stream流的基本使用》 — 欢迎参观小灰灰的网站哟 ヾ(◍°∇°◍)ﾉﾞ ~&pic=http://yoursite.com/img/my-portrait.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -294,22 +294,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2019/08/18/Java-8新特性之Stream流的基本使用/&title=《Java 8新特性之Stream流的基本使用》 — 欢迎参观小灰灰的网站哟 ヾ(◍°∇°◍)ﾉﾞ ~&source=My personal website ~" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2019/08/18/JDK-8新特性之Stream流的基本使用/&title=《JDK 8新特性之Stream流的基本使用》 — 欢迎参观小灰灰的网站哟 ヾ(◍°∇°◍)ﾉﾞ ~&source=My personal website ~" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2019/08/18/Java-8新特性之Stream流的基本使用/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2019/08/18/JDK-8新特性之Stream流的基本使用/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Java 8新特性之Stream流的基本使用》 — 欢迎参观小灰灰的网站哟 ヾ(◍°∇°◍)ﾉﾞ ~&url=http://yoursite.com/2019/08/18/Java-8新特性之Stream流的基本使用/&via=http://yoursite.com" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《JDK 8新特性之Stream流的基本使用》 — 欢迎参观小灰灰的网站哟 ヾ(◍°∇°◍)ﾉﾞ ~&url=http://yoursite.com/2019/08/18/JDK-8新特性之Stream流的基本使用/&via=http://yoursite.com" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2019/08/18/Java-8新特性之Stream流的基本使用/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2019/08/18/JDK-8新特性之Stream流的基本使用/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -341,9 +341,9 @@
 
   
     <div class="waves-block waves-effect next">
-      <a href="/2019/08/18/Java-8新特性之方法引用/" id="post-next" class="post-nav-link">
+      <a href="/2019/08/18/JDK-8新特性之方法引用/" id="post-next" class="post-nav-link">
         <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
-        <h4 class="title">Java 8新特性之方法引用</h4>
+        <h4 class="title">JDK 8新特性之方法引用</h4>
       </a>
     </div>
   
@@ -446,7 +446,7 @@
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2019/08/18/Java-8新特性之Stream流的基本使用/&title=《Java 8新特性之Stream流的基本使用》 — 欢迎参观小灰灰的网站哟 ヾ(◍°∇°◍)ﾉﾞ ~&pic=http://yoursite.com/img/my-portrait.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2019/08/18/JDK-8新特性之Stream流的基本使用/&title=《JDK 8新特性之Stream流的基本使用》 — 欢迎参观小灰灰的网站哟 ヾ(◍°∇°◍)ﾉﾞ ~&pic=http://yoursite.com/img/my-portrait.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -456,22 +456,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2019/08/18/Java-8新特性之Stream流的基本使用/&title=《Java 8新特性之Stream流的基本使用》 — 欢迎参观小灰灰的网站哟 ヾ(◍°∇°◍)ﾉﾞ ~&source=My personal website ~" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2019/08/18/JDK-8新特性之Stream流的基本使用/&title=《JDK 8新特性之Stream流的基本使用》 — 欢迎参观小灰灰的网站哟 ヾ(◍°∇°◍)ﾉﾞ ~&source=My personal website ~" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2019/08/18/Java-8新特性之Stream流的基本使用/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2019/08/18/JDK-8新特性之Stream流的基本使用/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Java 8新特性之Stream流的基本使用》 — 欢迎参观小灰灰的网站哟 ヾ(◍°∇°◍)ﾉﾞ ~&url=http://yoursite.com/2019/08/18/Java-8新特性之Stream流的基本使用/&via=http://yoursite.com" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《JDK 8新特性之Stream流的基本使用》 — 欢迎参观小灰灰的网站哟 ヾ(◍°∇°◍)ﾉﾞ ~&url=http://yoursite.com/2019/08/18/JDK-8新特性之Stream流的基本使用/&via=http://yoursite.com" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2019/08/18/Java-8新特性之Stream流的基本使用/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2019/08/18/JDK-8新特性之Stream流的基本使用/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -482,7 +482,7 @@
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
-    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://yoursite.com/2019/08/18/Java-8新特性之Stream流的基本使用/" alt="微信分享二维码">
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://yoursite.com/2019/08/18/JDK-8新特性之Stream流的基本使用/" alt="微信分享二维码">
 </div>
 
 
